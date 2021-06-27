@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "ReduxMonitor Extension",
+        "description": "A monitoring tool for debugging Redux-based application state changes."
+    },
+    "extension_description": {
+        "message": "A monitoring tool for debugging Redux-based application state changes.",
+        "description": "Use this extension in your development environment to monitor the actions fired by your Redux-based app, and the data stored using your Redux reducers."
+    }
+}
