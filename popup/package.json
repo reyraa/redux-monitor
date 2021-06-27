@@ -1,0 +1,38 @@
+{
+  "name": "popup",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "The react application used to render the popup of the Safari Extension (@reduxMonitor/safariExtension)",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "jest ./src",
+    "clean": "rm -rf ./public",
+    "copy": "mkdir ./public && cp ./src/index.html ./public/",
+    "build": "node config/build.js",
+    "build:prod": "node config/build.prod.js",
+    "build:dev": "node config/build.dev.js -w",
+    "start": "npm run clean && npm run copy && npm run build:dev",
+    "deploy": "cp -a ./public/. '../safari/ReduxMonitor Extension/Resources'"
+  },
+  "keywords": ["redux", "devtool", "monitor", "safari", "extension", "example"],
+  "author": "reyraa <haghighatkhah.ali@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.12.1",
+    "esbuild-plugin-postcss2": "^0.0.9",
+    "esbuild-serve": "^1.0.1",
+    "postcss": "^8.3.5",
+    "postcss-css-variables": "^0.18.0"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.0",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-json-view": "^1.21.3",
+    "react-redux": "^7.2.4",
+    "typescript": "^4.2.4"
+  }
+}
