@@ -2,10 +2,6 @@
   "name": "reduxmonitor",
   "version": "0.1.0",
   "description": "A monitoring tool for debugging Redux-based application state changes",
-  "main": "index.js",
-  "workspaces": [
-    "./packages/*"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reyraa/reduxMonitor.git"
@@ -13,7 +9,9 @@
   "keywords": [
     "redux",
     "devtool",
-    "monitor"
+    "monitor",
+    "safari",
+    "extension"
   ],
   "author": "reyraa",
   "license": "MIT",
