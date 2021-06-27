@@ -1,5 +1,5 @@
 {
-  "name": "reduxmonitor",
+  "name": "redux-monitor",
   "version": "0.1.0",
   "description": "A monitoring tool for debugging Redux-based application state changes",
   "repository": {

@@ -1,4 +1,4 @@
-# reduxMonitor
+# Redux Monitor
 A monitoring tool for debugging [Redux](https://github.com/reactjs/redux)-based application state changes.
 
 
@@ -13,13 +13,13 @@ At the moment Redux monitor is only made for Safari. You can find it on the App 
 
 
 ### Node module
-The Safari extension works in conjunction with [spy](https://github.com/reyraa/reduxMonitorSpy), a middleware that communicates all Redux actions and the application state with the Safari extension.
+The Safari extension works in conjunction with [spy](https://github.com/reyraa/redux-monitor-spy), a middleware that communicates all Redux actions and the application state with the Safari extension.
 
-Import `reduxMonitorSpy` and add it to your middleware array:
+Import `redux-monitor-spy` and add it to your middleware array:
 
 ```
 
-import spy from 'reduxMonitorSpy'; // Import this module
+import spy from 'redux-monitor-spy'; // Import this module
 import sampleReducer from './reducers';
 
 const middleWares = [spy]; // Then add it to your middleware array.
@@ -30,15 +30,15 @@ export default store;
 ```
 
 ## Development
-If you see a feature missing, please open an [issue](https://github.com/reyraa/reduxMonitor/issues). I'll try to implement new features regularly.
+If you see a feature missing, please open an [issue](https://github.com/reyraa/redux-monitor/issues). I'll try to implement new features regularly.
 
-If you're interested in fixing a bug, your contributions are more that welcome. Please open an [issue](https://github.com/reyraa/reduxMonitor/issues), use the template to explain the bug. Then open an pull request to address said issue.
+If you're interested in fixing a bug, your contributions are more that welcome. Please open an [issue](https://github.com/reyraa/redux-monitor/issues), use the template to explain the bug. Then open an pull request to address said issue.
 
 If you're interested in developing new features, please open an issue, wait for me and other community members to discuss and agree on the acceptance criteria, then start the development.
 
 
 ### Prerequisites
-Since ReduxMonitor is specifically developed for Safari, the following list is explained for Mac users.
+Since Redux Monitor is specifically developed for Safari, the following list is explained for Mac users.
  - Git
    - `brew install git`
  - NodeJS
@@ -51,15 +51,15 @@ Since ReduxMonitor is specifically developed for Safari, the following list is e
 
 ### Environment setup
 ```
-git clone https://github.com/reyraa/reduxMonitor.git
-cd reduxMonitor
+git clone https://github.com/reyraa/redux-monitor.git
+cd redux-monitor
 npm install
 ```
 
 
 ## Contributors
-See [contributors section](https://github.com/reyraa/reduxMonitor/graphs/contributors).
+See [contributors section](https://github.com/reyraa/redux-monitor/graphs/contributors).
 
 
 ## License
-ReduxMonitor is licensed under MIT. Feel free to use it for personal or business purpose.
+Redux Monitor is licensed under MIT. Feel free to use it for personal or business purpose.
