@@ -1,3 +1,5 @@
+![Logo](./docs/assets/redux-monitor-popup.png)
+
 # Redux Monitor
 A monitoring tool for debugging [Redux](https://github.com/reactjs/redux)-based application state changes.
 
