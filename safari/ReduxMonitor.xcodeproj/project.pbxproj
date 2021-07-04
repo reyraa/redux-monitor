@@ -7,57 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B68DF68C2688BACE007F40B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DF68B2688BACE007F40B0 /* AppDelegate.swift */; };
-		B68DF68F2688BACE007F40B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68DF68D2688BACE007F40B0 /* Main.storyboard */; };
-		B68DF6912688BACE007F40B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DF6902688BACE007F40B0 /* ViewController.swift */; };
-		B68DF6932688BAD6007F40B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68DF6922688BAD6007F40B0 /* Assets.xcassets */; };
-		B68DF69E2688BAD6007F40B0 /* ReduxMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DF69D2688BAD6007F40B0 /* ReduxMonitorTests.swift */; };
-		B68DF6A92688BAD6007F40B0 /* ReduxMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DF6A82688BAD6007F40B0 /* ReduxMonitorUITests.swift */; };
-		B68DF6B02688BAD6007F40B0 /* ReduxMonitor Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B68DF6AF2688BAD6007F40B0 /* ReduxMonitor Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B68DF6B52688BAD6007F40B0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68DF6B42688BAD6007F40B0 /* Cocoa.framework */; };
-		B68DF6B82688BAD6007F40B0 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68DF6B72688BAD6007F40B0 /* SafariWebExtensionHandler.swift */; };
-		B68DF6BB2688BAD6007F40B0 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = B68DF6BA2688BAD6007F40B0 /* _locales */; };
-		B68DF6BD2688BAD6007F40B0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = B68DF6BC2688BAD6007F40B0 /* images */; };
-		B68DF6ED2688BB3F007F40B0 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B68DF6E82688BB3E007F40B0 /* manifest.json */; };
-		B68DF6EE2688BB3F007F40B0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = B68DF6E92688BB3E007F40B0 /* background.js */; };
-		B68DF6EF2688BB3F007F40B0 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = B68DF6EA2688BB3E007F40B0 /* content.js */; };
-		B68DF72426891F28007F40B0 /* bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = B68DF72226891F28007F40B0 /* bundle.css */; };
-		B68DF72526891F28007F40B0 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B68DF72326891F28007F40B0 /* index.html */; };
-		B68DF72B2689201A007F40B0 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = B68DF72A2689201A007F40B0 /* bundle.js */; };
+		B6AC6B1D2691D148008ACCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC6B1C2691D148008ACCE0 /* AppDelegate.swift */; };
+		B6AC6B202691D148008ACCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B1E2691D148008ACCE0 /* Main.storyboard */; };
+		B6AC6B222691D148008ACCE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC6B212691D148008ACCE0 /* ViewController.swift */; };
+		B6AC6B242691D150008ACCE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B232691D150008ACCE0 /* Assets.xcassets */; };
+		B6AC6B2F2691D150008ACCE0 /* ReduxMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC6B2E2691D150008ACCE0 /* ReduxMonitorTests.swift */; };
+		B6AC6B3A2691D150008ACCE0 /* ReduxMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC6B392691D150008ACCE0 /* ReduxMonitorUITests.swift */; };
+		B6AC6B412691D150008ACCE0 /* ReduxMonitor Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6AC6B402691D150008ACCE0 /* ReduxMonitor Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6AC6B462691D150008ACCE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC6B452691D150008ACCE0 /* Cocoa.framework */; };
+		B6AC6B492691D150008ACCE0 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC6B482691D150008ACCE0 /* SafariWebExtensionHandler.swift */; };
+		B6AC6B4C2691D150008ACCE0 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B4B2691D150008ACCE0 /* _locales */; };
+		B6AC6B4E2691D150008ACCE0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B4D2691D150008ACCE0 /* images */; };
+		B6AC6B7B2691D18C008ACCE0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B742691D18C008ACCE0 /* background.js */; };
+		B6AC6B7C2691D18C008ACCE0 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B752691D18C008ACCE0 /* bundle.js */; };
+		B6AC6B7D2691D18C008ACCE0 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B762691D18C008ACCE0 /* index.html */; };
+		B6AC6B7E2691D18C008ACCE0 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B772691D18C008ACCE0 /* manifest.json */; };
+		B6AC6B7F2691D18C008ACCE0 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B792691D18C008ACCE0 /* content.js */; };
+		B6AC6B802691D18C008ACCE0 /* bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B7A2691D18C008ACCE0 /* bundle.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B68DF69A2688BAD6007F40B0 /* PBXContainerItemProxy */ = {
+		B6AC6B2B2691D150008ACCE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B68DF67F2688BACE007F40B0 /* Project object */;
+			containerPortal = B6AC6B102691D148008ACCE0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B68DF6862688BACE007F40B0;
+			remoteGlobalIDString = B6AC6B172691D148008ACCE0;
 			remoteInfo = ReduxMonitor;
 		};
-		B68DF6A52688BAD6007F40B0 /* PBXContainerItemProxy */ = {
+		B6AC6B362691D150008ACCE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B68DF67F2688BACE007F40B0 /* Project object */;
+			containerPortal = B6AC6B102691D148008ACCE0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B68DF6862688BACE007F40B0;
+			remoteGlobalIDString = B6AC6B172691D148008ACCE0;
 			remoteInfo = ReduxMonitor;
 		};
-		B68DF6B12688BAD6007F40B0 /* PBXContainerItemProxy */ = {
+		B6AC6B422691D150008ACCE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B68DF67F2688BACE007F40B0 /* Project object */;
+			containerPortal = B6AC6B102691D148008ACCE0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B68DF6AE2688BAD6007F40B0;
+			remoteGlobalIDString = B6AC6B3F2691D150008ACCE0;
 			remoteInfo = "ReduxMonitor Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B68DF6D12688BAD6007F40B0 /* Embed App Extensions */ = {
+		B6AC6B622691D150008ACCE0 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				B68DF6B02688BAD6007F40B0 /* ReduxMonitor Extension.appex in Embed App Extensions */,
+				B6AC6B412691D150008ACCE0 /* ReduxMonitor Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,153 +65,153 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B68DF6872688BACE007F40B0 /* ReduxMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68DF68A2688BACE007F40B0 /* ReduxMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReduxMonitor.entitlements; sourceTree = "<group>"; };
-		B68DF68B2688BACE007F40B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B68DF68E2688BACE007F40B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B68DF6902688BACE007F40B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B68DF6922688BAD6007F40B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B68DF6942688BAD6007F40B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B68DF6992688BAD6007F40B0 /* ReduxMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68DF69D2688BAD6007F40B0 /* ReduxMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMonitorTests.swift; sourceTree = "<group>"; };
-		B68DF69F2688BAD6007F40B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B68DF6A42688BAD6007F40B0 /* ReduxMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68DF6A82688BAD6007F40B0 /* ReduxMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMonitorUITests.swift; sourceTree = "<group>"; };
-		B68DF6AA2688BAD6007F40B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B68DF6AF2688BAD6007F40B0 /* ReduxMonitor Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReduxMonitor Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B68DF6B42688BAD6007F40B0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		B68DF6B72688BAD6007F40B0 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
-		B68DF6BA2688BAD6007F40B0 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
-		B68DF6BC2688BAD6007F40B0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
-		B68DF6CA2688BAD6007F40B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B68DF6CB2688BAD6007F40B0 /* ReduxMonitor_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReduxMonitor_Extension.entitlements; sourceTree = "<group>"; };
-		B68DF6E82688BB3E007F40B0 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		B68DF6E92688BB3E007F40B0 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		B68DF6EA2688BB3E007F40B0 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		B68DF72126891F28007F40B0 /* bundle.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = bundle.js.map; path = ../../../popup/public/bundle.js.map; sourceTree = "<group>"; };
-		B68DF72226891F28007F40B0 /* bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = bundle.css; path = ../../../popup/public/bundle.css; sourceTree = "<group>"; };
-		B68DF72326891F28007F40B0 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../../popup/public/index.html; sourceTree = "<group>"; };
-		B68DF72A2689201A007F40B0 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = bundle.js; path = ../../../popup/public/bundle.js; sourceTree = "<group>"; };
+		B6AC6B182691D148008ACCE0 /* ReduxMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AC6B1B2691D148008ACCE0 /* ReduxMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReduxMonitor.entitlements; sourceTree = "<group>"; };
+		B6AC6B1C2691D148008ACCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6AC6B1F2691D148008ACCE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6AC6B212691D148008ACCE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6AC6B232691D150008ACCE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6AC6B252691D150008ACCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AC6B2A2691D150008ACCE0 /* ReduxMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AC6B2E2691D150008ACCE0 /* ReduxMonitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMonitorTests.swift; sourceTree = "<group>"; };
+		B6AC6B302691D150008ACCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AC6B352691D150008ACCE0 /* ReduxMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AC6B392691D150008ACCE0 /* ReduxMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMonitorUITests.swift; sourceTree = "<group>"; };
+		B6AC6B3B2691D150008ACCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AC6B402691D150008ACCE0 /* ReduxMonitor Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReduxMonitor Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AC6B452691D150008ACCE0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B6AC6B482691D150008ACCE0 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		B6AC6B4B2691D150008ACCE0 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		B6AC6B4D2691D150008ACCE0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		B6AC6B5B2691D150008ACCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6AC6B5C2691D150008ACCE0 /* ReduxMonitor_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReduxMonitor_Extension.entitlements; sourceTree = "<group>"; };
+		B6AC6B742691D18C008ACCE0 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		B6AC6B752691D18C008ACCE0 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
+		B6AC6B762691D18C008ACCE0 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		B6AC6B772691D18C008ACCE0 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		B6AC6B782691D18C008ACCE0 /* bundle.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = bundle.js.map; sourceTree = "<group>"; };
+		B6AC6B792691D18C008ACCE0 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		B6AC6B7A2691D18C008ACCE0 /* bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bundle.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B68DF6842688BACE007F40B0 /* Frameworks */ = {
+		B6AC6B152691D148008ACCE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6962688BAD6007F40B0 /* Frameworks */ = {
+		B6AC6B272691D150008ACCE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6A12688BAD6007F40B0 /* Frameworks */ = {
+		B6AC6B322691D150008ACCE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6AC2688BAD6007F40B0 /* Frameworks */ = {
+		B6AC6B3D2691D150008ACCE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68DF6B52688BAD6007F40B0 /* Cocoa.framework in Frameworks */,
+				B6AC6B462691D150008ACCE0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B68DF67E2688BACE007F40B0 = {
+		B6AC6B0F2691D148008ACCE0 = {
 			isa = PBXGroup;
 			children = (
-				B68DF6892688BACE007F40B0 /* ReduxMonitor */,
-				B68DF69C2688BAD6007F40B0 /* ReduxMonitorTests */,
-				B68DF6A72688BAD6007F40B0 /* ReduxMonitorUITests */,
-				B68DF6B62688BAD6007F40B0 /* ReduxMonitor Extension */,
-				B68DF6B32688BAD6007F40B0 /* Frameworks */,
-				B68DF6882688BACE007F40B0 /* Products */,
+				B6AC6B1A2691D148008ACCE0 /* ReduxMonitor */,
+				B6AC6B2D2691D150008ACCE0 /* ReduxMonitorTests */,
+				B6AC6B382691D150008ACCE0 /* ReduxMonitorUITests */,
+				B6AC6B472691D150008ACCE0 /* ReduxMonitor Extension */,
+				B6AC6B442691D150008ACCE0 /* Frameworks */,
+				B6AC6B192691D148008ACCE0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B68DF6882688BACE007F40B0 /* Products */ = {
+		B6AC6B192691D148008ACCE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B68DF6872688BACE007F40B0 /* ReduxMonitor.app */,
-				B68DF6992688BAD6007F40B0 /* ReduxMonitorTests.xctest */,
-				B68DF6A42688BAD6007F40B0 /* ReduxMonitorUITests.xctest */,
-				B68DF6AF2688BAD6007F40B0 /* ReduxMonitor Extension.appex */,
+				B6AC6B182691D148008ACCE0 /* ReduxMonitor.app */,
+				B6AC6B2A2691D150008ACCE0 /* ReduxMonitorTests.xctest */,
+				B6AC6B352691D150008ACCE0 /* ReduxMonitorUITests.xctest */,
+				B6AC6B402691D150008ACCE0 /* ReduxMonitor Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B68DF6892688BACE007F40B0 /* ReduxMonitor */ = {
+		B6AC6B1A2691D148008ACCE0 /* ReduxMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				B68DF68A2688BACE007F40B0 /* ReduxMonitor.entitlements */,
-				B68DF68B2688BACE007F40B0 /* AppDelegate.swift */,
-				B68DF68D2688BACE007F40B0 /* Main.storyboard */,
-				B68DF6902688BACE007F40B0 /* ViewController.swift */,
-				B68DF6922688BAD6007F40B0 /* Assets.xcassets */,
-				B68DF6942688BAD6007F40B0 /* Info.plist */,
+				B6AC6B1B2691D148008ACCE0 /* ReduxMonitor.entitlements */,
+				B6AC6B1C2691D148008ACCE0 /* AppDelegate.swift */,
+				B6AC6B1E2691D148008ACCE0 /* Main.storyboard */,
+				B6AC6B212691D148008ACCE0 /* ViewController.swift */,
+				B6AC6B232691D150008ACCE0 /* Assets.xcassets */,
+				B6AC6B252691D150008ACCE0 /* Info.plist */,
 			);
 			path = ReduxMonitor;
 			sourceTree = "<group>";
 		};
-		B68DF69C2688BAD6007F40B0 /* ReduxMonitorTests */ = {
+		B6AC6B2D2691D150008ACCE0 /* ReduxMonitorTests */ = {
 			isa = PBXGroup;
 			children = (
-				B68DF69D2688BAD6007F40B0 /* ReduxMonitorTests.swift */,
-				B68DF69F2688BAD6007F40B0 /* Info.plist */,
+				B6AC6B2E2691D150008ACCE0 /* ReduxMonitorTests.swift */,
+				B6AC6B302691D150008ACCE0 /* Info.plist */,
 			);
 			path = ReduxMonitorTests;
 			sourceTree = "<group>";
 		};
-		B68DF6A72688BAD6007F40B0 /* ReduxMonitorUITests */ = {
+		B6AC6B382691D150008ACCE0 /* ReduxMonitorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B68DF6A82688BAD6007F40B0 /* ReduxMonitorUITests.swift */,
-				B68DF6AA2688BAD6007F40B0 /* Info.plist */,
+				B6AC6B392691D150008ACCE0 /* ReduxMonitorUITests.swift */,
+				B6AC6B3B2691D150008ACCE0 /* Info.plist */,
 			);
 			path = ReduxMonitorUITests;
 			sourceTree = "<group>";
 		};
-		B68DF6B32688BAD6007F40B0 /* Frameworks */ = {
+		B6AC6B442691D150008ACCE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B68DF6B42688BAD6007F40B0 /* Cocoa.framework */,
+				B6AC6B452691D150008ACCE0 /* Cocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B68DF6B62688BAD6007F40B0 /* ReduxMonitor Extension */ = {
+		B6AC6B472691D150008ACCE0 /* ReduxMonitor Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B68DF6B72688BAD6007F40B0 /* SafariWebExtensionHandler.swift */,
-				B68DF6CA2688BAD6007F40B0 /* Info.plist */,
-				B68DF6CB2688BAD6007F40B0 /* ReduxMonitor_Extension.entitlements */,
-				B68DF6B92688BAD6007F40B0 /* Resources */,
+				B6AC6B482691D150008ACCE0 /* SafariWebExtensionHandler.swift */,
+				B6AC6B5B2691D150008ACCE0 /* Info.plist */,
+				B6AC6B5C2691D150008ACCE0 /* ReduxMonitor_Extension.entitlements */,
+				B6AC6B4A2691D150008ACCE0 /* Resources */,
 			);
 			path = "ReduxMonitor Extension";
 			sourceTree = "<group>";
 		};
-		B68DF6B92688BAD6007F40B0 /* Resources */ = {
+		B6AC6B4A2691D150008ACCE0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B68DF6E92688BB3E007F40B0 /* background.js */,
-				B68DF72226891F28007F40B0 /* bundle.css */,
-				B68DF72126891F28007F40B0 /* bundle.js.map */,
-				B68DF72A2689201A007F40B0 /* bundle.js */,
-				B68DF72326891F28007F40B0 /* index.html */,
-				B68DF6EA2688BB3E007F40B0 /* content.js */,
-				B68DF6E82688BB3E007F40B0 /* manifest.json */,
-				B68DF6BA2688BAD6007F40B0 /* _locales */,
-				B68DF6BC2688BAD6007F40B0 /* images */,
+				B6AC6B742691D18C008ACCE0 /* background.js */,
+				B6AC6B7A2691D18C008ACCE0 /* bundle.css */,
+				B6AC6B752691D18C008ACCE0 /* bundle.js */,
+				B6AC6B782691D18C008ACCE0 /* bundle.js.map */,
+				B6AC6B792691D18C008ACCE0 /* content.js */,
+				B6AC6B762691D18C008ACCE0 /* index.html */,
+				B6AC6B772691D18C008ACCE0 /* manifest.json */,
+				B6AC6B4B2691D150008ACCE0 /* _locales */,
+				B6AC6B4D2691D150008ACCE0 /* images */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -219,68 +219,68 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B68DF6862688BACE007F40B0 /* ReduxMonitor */ = {
+		B6AC6B172691D148008ACCE0 /* ReduxMonitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B68DF6D22688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitor" */;
+			buildConfigurationList = B6AC6B632691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitor" */;
 			buildPhases = (
-				B68DF6832688BACE007F40B0 /* Sources */,
-				B68DF6842688BACE007F40B0 /* Frameworks */,
-				B68DF6852688BACE007F40B0 /* Resources */,
-				B68DF6D12688BAD6007F40B0 /* Embed App Extensions */,
+				B6AC6B142691D148008ACCE0 /* Sources */,
+				B6AC6B152691D148008ACCE0 /* Frameworks */,
+				B6AC6B162691D148008ACCE0 /* Resources */,
+				B6AC6B622691D150008ACCE0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B68DF6B22688BAD6007F40B0 /* PBXTargetDependency */,
+				B6AC6B432691D150008ACCE0 /* PBXTargetDependency */,
 			);
 			name = ReduxMonitor;
 			productName = ReduxMonitor;
-			productReference = B68DF6872688BACE007F40B0 /* ReduxMonitor.app */;
+			productReference = B6AC6B182691D148008ACCE0 /* ReduxMonitor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B68DF6982688BAD6007F40B0 /* ReduxMonitorTests */ = {
+		B6AC6B292691D150008ACCE0 /* ReduxMonitorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B68DF6D52688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitorTests" */;
+			buildConfigurationList = B6AC6B662691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitorTests" */;
 			buildPhases = (
-				B68DF6952688BAD6007F40B0 /* Sources */,
-				B68DF6962688BAD6007F40B0 /* Frameworks */,
-				B68DF6972688BAD6007F40B0 /* Resources */,
+				B6AC6B262691D150008ACCE0 /* Sources */,
+				B6AC6B272691D150008ACCE0 /* Frameworks */,
+				B6AC6B282691D150008ACCE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B68DF69B2688BAD6007F40B0 /* PBXTargetDependency */,
+				B6AC6B2C2691D150008ACCE0 /* PBXTargetDependency */,
 			);
 			name = ReduxMonitorTests;
 			productName = ReduxMonitorTests;
-			productReference = B68DF6992688BAD6007F40B0 /* ReduxMonitorTests.xctest */;
+			productReference = B6AC6B2A2691D150008ACCE0 /* ReduxMonitorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B68DF6A32688BAD6007F40B0 /* ReduxMonitorUITests */ = {
+		B6AC6B342691D150008ACCE0 /* ReduxMonitorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B68DF6D82688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitorUITests" */;
+			buildConfigurationList = B6AC6B692691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitorUITests" */;
 			buildPhases = (
-				B68DF6A02688BAD6007F40B0 /* Sources */,
-				B68DF6A12688BAD6007F40B0 /* Frameworks */,
-				B68DF6A22688BAD6007F40B0 /* Resources */,
+				B6AC6B312691D150008ACCE0 /* Sources */,
+				B6AC6B322691D150008ACCE0 /* Frameworks */,
+				B6AC6B332691D150008ACCE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B68DF6A62688BAD6007F40B0 /* PBXTargetDependency */,
+				B6AC6B372691D150008ACCE0 /* PBXTargetDependency */,
 			);
 			name = ReduxMonitorUITests;
 			productName = ReduxMonitorUITests;
-			productReference = B68DF6A42688BAD6007F40B0 /* ReduxMonitorUITests.xctest */;
+			productReference = B6AC6B352691D150008ACCE0 /* ReduxMonitorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		B68DF6AE2688BAD6007F40B0 /* ReduxMonitor Extension */ = {
+		B6AC6B3F2691D150008ACCE0 /* ReduxMonitor Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B68DF6CE2688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitor Extension" */;
+			buildConfigurationList = B6AC6B5F2691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitor Extension" */;
 			buildPhases = (
-				B68DF6AB2688BAD6007F40B0 /* Sources */,
-				B68DF6AC2688BAD6007F40B0 /* Frameworks */,
-				B68DF6AD2688BAD6007F40B0 /* Resources */,
+				B6AC6B3C2691D150008ACCE0 /* Sources */,
+				B6AC6B3D2691D150008ACCE0 /* Frameworks */,
+				B6AC6B3E2691D150008ACCE0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -288,35 +288,35 @@
 			);
 			name = "ReduxMonitor Extension";
 			productName = "ReduxMonitor Extension";
-			productReference = B68DF6AF2688BAD6007F40B0 /* ReduxMonitor Extension.appex */;
+			productReference = B6AC6B402691D150008ACCE0 /* ReduxMonitor Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B68DF67F2688BACE007F40B0 /* Project object */ = {
+		B6AC6B102691D148008ACCE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					B68DF6862688BACE007F40B0 = {
+					B6AC6B172691D148008ACCE0 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					B68DF6982688BAD6007F40B0 = {
+					B6AC6B292691D150008ACCE0 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = B68DF6862688BACE007F40B0;
+						TestTargetID = B6AC6B172691D148008ACCE0;
 					};
-					B68DF6A32688BAD6007F40B0 = {
+					B6AC6B342691D150008ACCE0 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = B68DF6862688BACE007F40B0;
+						TestTargetID = B6AC6B172691D148008ACCE0;
 					};
-					B68DF6AE2688BAD6007F40B0 = {
+					B6AC6B3F2691D150008ACCE0 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = B68DF6822688BACE007F40B0 /* Build configuration list for PBXProject "ReduxMonitor" */;
+			buildConfigurationList = B6AC6B132691D148008ACCE0 /* Build configuration list for PBXProject "ReduxMonitor" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -324,119 +324,119 @@
 				en,
 				Base,
 			);
-			mainGroup = B68DF67E2688BACE007F40B0;
-			productRefGroup = B68DF6882688BACE007F40B0 /* Products */;
+			mainGroup = B6AC6B0F2691D148008ACCE0;
+			productRefGroup = B6AC6B192691D148008ACCE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B68DF6862688BACE007F40B0 /* ReduxMonitor */,
-				B68DF6982688BAD6007F40B0 /* ReduxMonitorTests */,
-				B68DF6A32688BAD6007F40B0 /* ReduxMonitorUITests */,
-				B68DF6AE2688BAD6007F40B0 /* ReduxMonitor Extension */,
+				B6AC6B172691D148008ACCE0 /* ReduxMonitor */,
+				B6AC6B292691D150008ACCE0 /* ReduxMonitorTests */,
+				B6AC6B342691D150008ACCE0 /* ReduxMonitorUITests */,
+				B6AC6B3F2691D150008ACCE0 /* ReduxMonitor Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B68DF6852688BACE007F40B0 /* Resources */ = {
+		B6AC6B162691D148008ACCE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68DF6932688BAD6007F40B0 /* Assets.xcassets in Resources */,
-				B68DF68F2688BACE007F40B0 /* Main.storyboard in Resources */,
+				B6AC6B242691D150008ACCE0 /* Assets.xcassets in Resources */,
+				B6AC6B202691D148008ACCE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6972688BAD6007F40B0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B68DF6A22688BAD6007F40B0 /* Resources */ = {
+		B6AC6B282691D150008ACCE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6AD2688BAD6007F40B0 /* Resources */ = {
+		B6AC6B332691D150008ACCE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68DF72526891F28007F40B0 /* index.html in Resources */,
-				B68DF6EF2688BB3F007F40B0 /* content.js in Resources */,
-				B68DF72426891F28007F40B0 /* bundle.css in Resources */,
-				B68DF6ED2688BB3F007F40B0 /* manifest.json in Resources */,
-				B68DF6BD2688BAD6007F40B0 /* images in Resources */,
-				B68DF6BB2688BAD6007F40B0 /* _locales in Resources */,
-				B68DF72B2689201A007F40B0 /* bundle.js in Resources */,
-				B68DF6EE2688BB3F007F40B0 /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6AC6B3E2691D150008ACCE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6AC6B7D2691D18C008ACCE0 /* index.html in Resources */,
+				B6AC6B4E2691D150008ACCE0 /* images in Resources */,
+				B6AC6B7B2691D18C008ACCE0 /* background.js in Resources */,
+				B6AC6B802691D18C008ACCE0 /* bundle.css in Resources */,
+				B6AC6B7C2691D18C008ACCE0 /* bundle.js in Resources */,
+				B6AC6B7E2691D18C008ACCE0 /* manifest.json in Resources */,
+				B6AC6B7F2691D18C008ACCE0 /* content.js in Resources */,
+				B6AC6B4C2691D150008ACCE0 /* _locales in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B68DF6832688BACE007F40B0 /* Sources */ = {
+		B6AC6B142691D148008ACCE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68DF6912688BACE007F40B0 /* ViewController.swift in Sources */,
-				B68DF68C2688BACE007F40B0 /* AppDelegate.swift in Sources */,
+				B6AC6B222691D148008ACCE0 /* ViewController.swift in Sources */,
+				B6AC6B1D2691D148008ACCE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6952688BAD6007F40B0 /* Sources */ = {
+		B6AC6B262691D150008ACCE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68DF69E2688BAD6007F40B0 /* ReduxMonitorTests.swift in Sources */,
+				B6AC6B2F2691D150008ACCE0 /* ReduxMonitorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6A02688BAD6007F40B0 /* Sources */ = {
+		B6AC6B312691D150008ACCE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68DF6A92688BAD6007F40B0 /* ReduxMonitorUITests.swift in Sources */,
+				B6AC6B3A2691D150008ACCE0 /* ReduxMonitorUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B68DF6AB2688BAD6007F40B0 /* Sources */ = {
+		B6AC6B3C2691D150008ACCE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68DF6B82688BAD6007F40B0 /* SafariWebExtensionHandler.swift in Sources */,
+				B6AC6B492691D150008ACCE0 /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B68DF69B2688BAD6007F40B0 /* PBXTargetDependency */ = {
+		B6AC6B2C2691D150008ACCE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B68DF6862688BACE007F40B0 /* ReduxMonitor */;
-			targetProxy = B68DF69A2688BAD6007F40B0 /* PBXContainerItemProxy */;
+			target = B6AC6B172691D148008ACCE0 /* ReduxMonitor */;
+			targetProxy = B6AC6B2B2691D150008ACCE0 /* PBXContainerItemProxy */;
 		};
-		B68DF6A62688BAD6007F40B0 /* PBXTargetDependency */ = {
+		B6AC6B372691D150008ACCE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B68DF6862688BACE007F40B0 /* ReduxMonitor */;
-			targetProxy = B68DF6A52688BAD6007F40B0 /* PBXContainerItemProxy */;
+			target = B6AC6B172691D148008ACCE0 /* ReduxMonitor */;
+			targetProxy = B6AC6B362691D150008ACCE0 /* PBXContainerItemProxy */;
 		};
-		B68DF6B22688BAD6007F40B0 /* PBXTargetDependency */ = {
+		B6AC6B432691D150008ACCE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B68DF6AE2688BAD6007F40B0 /* ReduxMonitor Extension */;
-			targetProxy = B68DF6B12688BAD6007F40B0 /* PBXContainerItemProxy */;
+			target = B6AC6B3F2691D150008ACCE0 /* ReduxMonitor Extension */;
+			targetProxy = B6AC6B422691D150008ACCE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B68DF68D2688BACE007F40B0 /* Main.storyboard */ = {
+		B6AC6B1E2691D148008ACCE0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B68DF68E2688BACE007F40B0 /* Base */,
+				B6AC6B1F2691D148008ACCE0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -444,7 +444,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B68DF6CC2688BAD6007F40B0 /* Debug */ = {
+		B6AC6B5D2691D150008ACCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -505,7 +505,7 @@
 			};
 			name = Debug;
 		};
-		B68DF6CD2688BAD6007F40B0 /* Release */ = {
+		B6AC6B5E2691D150008ACCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -559,7 +559,7 @@
 			};
 			name = Release;
 		};
-		B68DF6CF2688BAD6007F40B0 /* Debug */ = {
+		B6AC6B602691D150008ACCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ReduxMonitor Extension/ReduxMonitor_Extension.entitlements";
@@ -581,7 +581,7 @@
 			};
 			name = Debug;
 		};
-		B68DF6D02688BAD6007F40B0 /* Release */ = {
+		B6AC6B612691D150008ACCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ReduxMonitor Extension/ReduxMonitor_Extension.entitlements";
@@ -603,7 +603,7 @@
 			};
 			name = Release;
 		};
-		B68DF6D32688BAD6007F40B0 /* Debug */ = {
+		B6AC6B642691D150008ACCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -627,7 +627,7 @@
 			};
 			name = Debug;
 		};
-		B68DF6D42688BAD6007F40B0 /* Release */ = {
+		B6AC6B652691D150008ACCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -651,7 +651,7 @@
 			};
 			name = Release;
 		};
-		B68DF6D62688BAD6007F40B0 /* Debug */ = {
+		B6AC6B672691D150008ACCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -673,7 +673,7 @@
 			};
 			name = Debug;
 		};
-		B68DF6D72688BAD6007F40B0 /* Release */ = {
+		B6AC6B682691D150008ACCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -695,7 +695,7 @@
 			};
 			name = Release;
 		};
-		B68DF6D92688BAD6007F40B0 /* Debug */ = {
+		B6AC6B6A2691D150008ACCE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -715,7 +715,7 @@
 			};
 			name = Debug;
 		};
-		B68DF6DA2688BAD6007F40B0 /* Release */ = {
+		B6AC6B6B2691D150008ACCE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -738,52 +738,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B68DF6822688BACE007F40B0 /* Build configuration list for PBXProject "ReduxMonitor" */ = {
+		B6AC6B132691D148008ACCE0 /* Build configuration list for PBXProject "ReduxMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B68DF6CC2688BAD6007F40B0 /* Debug */,
-				B68DF6CD2688BAD6007F40B0 /* Release */,
+				B6AC6B5D2691D150008ACCE0 /* Debug */,
+				B6AC6B5E2691D150008ACCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B68DF6CE2688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitor Extension" */ = {
+		B6AC6B5F2691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitor Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B68DF6CF2688BAD6007F40B0 /* Debug */,
-				B68DF6D02688BAD6007F40B0 /* Release */,
+				B6AC6B602691D150008ACCE0 /* Debug */,
+				B6AC6B612691D150008ACCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B68DF6D22688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitor" */ = {
+		B6AC6B632691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B68DF6D32688BAD6007F40B0 /* Debug */,
-				B68DF6D42688BAD6007F40B0 /* Release */,
+				B6AC6B642691D150008ACCE0 /* Debug */,
+				B6AC6B652691D150008ACCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B68DF6D52688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitorTests" */ = {
+		B6AC6B662691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B68DF6D62688BAD6007F40B0 /* Debug */,
-				B68DF6D72688BAD6007F40B0 /* Release */,
+				B6AC6B672691D150008ACCE0 /* Debug */,
+				B6AC6B682691D150008ACCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B68DF6D82688BAD6007F40B0 /* Build configuration list for PBXNativeTarget "ReduxMonitorUITests" */ = {
+		B6AC6B692691D150008ACCE0 /* Build configuration list for PBXNativeTarget "ReduxMonitorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B68DF6D92688BAD6007F40B0 /* Debug */,
-				B68DF6DA2688BAD6007F40B0 /* Release */,
+				B6AC6B6A2691D150008ACCE0 /* Debug */,
+				B6AC6B6B2691D150008ACCE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B68DF67F2688BACE007F40B0 /* Project object */;
+	rootObject = B6AC6B102691D148008ACCE0 /* Project object */;
 }
