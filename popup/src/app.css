@@ -21,7 +21,7 @@ BASIC
     display: inline-block;
     width: 26px;
     height: 26px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 10px;
@@ -33,6 +33,8 @@ BASIC
     display: block;
     width: 26px;
     height: 26px;
+    color: #515053;
+    font-size: 13px;
 }
 
 .button:active .button-icon {
@@ -40,26 +42,27 @@ BASIC
 }
 
 .button .button-text {
-    color: white;
-    font-size: 11px;
+    color: #232323;
+    font-size: 12px;
+    font-weight: 500;
     vertical-align: middle;
     display: inline-block;
-    line-height: 30px;
+    line-height: 27px;
 }
 
 .button:hover {
-    background: rgba(59, 59, 55, 0.3);
+    background: rgba(0, 0, 0, 0.06);
 }
 
 .button:active {
-    border: solid 0.5px #1a1a1a;
-    box-shadow: 0 0 1px 0.5px #5D5C5B;
+    border: solid 0.5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .box {
-    background: rgba(59, 59, 55, 0.5);
-    border: solid 0.5px #5D5C5B;
-    box-shadow: 0 0 1px 0.5px #1a1a1a;
+    background: #EDECEF;
+    border: solid 0.5px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 13px;
 }
@@ -70,7 +73,7 @@ BASIC
 }
 
 h2 {
-    color: white;
+    color: #232323;
     line-height: 20px;
     margin: 0;
     text-align: left;
@@ -80,9 +83,9 @@ h2 {
 }
 
 .subtitle {
-    font-size: 11px;
-    font-weight: 300;
-    color: #B9B8B4;
+    font-size: 10px;
+    font-weight: 400;
+    color: #6B6A6D;
     display: inline-block;
     width: 100%;
     text-align: left;
@@ -98,6 +101,10 @@ input[type="radio"]:checked + .button .button-icon {
     background: #3686F7;
 }
 
+input[type="radio"]:checked + .button .button-icon:before {
+    color: #fff !important;
+}
+
 .noDisplay {
     display: none;
 }
@@ -107,7 +114,7 @@ LAYOUT
 ********************/
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, Helvetica Neue, sans-serif;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -126,17 +133,17 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 10px;
+    /* background: #E9E8EB; */
 }
 
 .wrapper.panel {
     width: 700px;
     height: 500px;
-    padding: 15px;
 }
 
 .wrapper.message {
     width: 355px;
-    height: 90px;
+    height: 100px;
     padding: 10px;
 }
 
@@ -150,11 +157,12 @@ body {
 
 .actions {
     width: 200px;
+    padding: 15px 7.5px 15px 15px;
 }
 
 .state {
     width: 450px;
-    padding-left: 15px;
+    padding: 15px 15px 15px 7.5px;
 }
 
 .actions > header,
@@ -190,7 +198,7 @@ ASIDE / ACTIONS
 
 .actions li {
     padding: 0 0 4px 0;
-    color: #CCC9C9;
+    color: #6B6A6D;
     text-align: left;
     margin: 4px 0;
     font-size: 12px;
@@ -213,11 +221,11 @@ ASIDE / ACTIONS
 }
 
 .actions li:hover span {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.06);
 }
 
 .actions li.selected span {
-    background: #FFFFFF;
+    background: rgba(0, 0, 0, 0.06);
     color: #3686F7;
 }
 
@@ -255,6 +263,7 @@ Message
 .message {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
 }
 
 .message img {
@@ -281,7 +290,7 @@ Message
 .message p {
     font-size: 10px;
     line-height: 12px;
-    color: #bbb;
+    color: #a3a3a3;
     margin: 12px 0 0;
 }
 
@@ -291,5 +300,61 @@ Message
     padding: 0 1px 0 2px;
 }
 
-/* @media (prefers-color-scheme: dark) {
-} */
+@media (prefers-color-scheme: dark) {
+    .button .button-icon {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    input[type="radio"]:checked + .button .button-icon:before  {
+        color: #fff !important;
+    }
+
+    .button .button-icon:before {
+        color: #CAC9CD !important;
+    }
+
+    .button .button-text {
+        color: white;
+    }
+
+    .button:hover {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .button:active {
+        border: solid 0.5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 1px 0.5px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        color: white;
+    }
+
+    .subtitle {
+        color: #B9B8B4;
+    }
+
+    .box {
+        background: rgba(43, 43, 43, 0.18);
+        border: solid 0.5px #5D5C5B;
+        box-shadow: 0 0 1px 0.5px #1a1a1a;
+    }
+
+    .message p {
+        color: #bbb;
+    }
+
+    .actions li {
+        color: #CCC9C9;
+        border-bottom: solid 1px rgba(184, 184, 183, 0.5);
+    }
+
+    .actions li:hover span {
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .actions li.selected span {
+        background: #FFFFFF;
+        color: #3686F7;
+    }
+}
