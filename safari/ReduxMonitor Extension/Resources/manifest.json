@@ -4,7 +4,7 @@
 
     "name": "__MSG_extension_name__",
     "description": "__MSG_extension_description__",
-    "version": "1.0",
+    "version": "0.1.0",
 
     "icons": {
         "48": "images/icon-48.png",
@@ -25,6 +25,7 @@
     }],
 
     "browser_action": {
+        "browser_style": true,
         "default_popup": "index.html",
         "default_icon": {
             "16": "images/toolbar-icon-16.png",
@@ -34,5 +35,5 @@
         }
     },
 
-    "permissions": [ "*://*/*" ],
+    "permissions": [ ]
 }
