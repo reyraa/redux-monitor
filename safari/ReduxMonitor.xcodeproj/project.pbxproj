@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6A969152692402F004ACC17 /* bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = B6A969122692402F004ACC17 /* bundle.css */; };
+		B6A969162692402F004ACC17 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = B6A969132692402F004ACC17 /* bundle.js */; };
 		B6AC6B1D2691D148008ACCE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC6B1C2691D148008ACCE0 /* AppDelegate.swift */; };
 		B6AC6B202691D148008ACCE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B1E2691D148008ACCE0 /* Main.storyboard */; };
 		B6AC6B222691D148008ACCE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AC6B212691D148008ACCE0 /* ViewController.swift */; };
@@ -19,11 +21,9 @@
 		B6AC6B4C2691D150008ACCE0 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B4B2691D150008ACCE0 /* _locales */; };
 		B6AC6B4E2691D150008ACCE0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B4D2691D150008ACCE0 /* images */; };
 		B6AC6B7B2691D18C008ACCE0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B742691D18C008ACCE0 /* background.js */; };
-		B6AC6B7C2691D18C008ACCE0 /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B752691D18C008ACCE0 /* bundle.js */; };
 		B6AC6B7D2691D18C008ACCE0 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B762691D18C008ACCE0 /* index.html */; };
 		B6AC6B7E2691D18C008ACCE0 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B772691D18C008ACCE0 /* manifest.json */; };
 		B6AC6B7F2691D18C008ACCE0 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B792691D18C008ACCE0 /* content.js */; };
-		B6AC6B802691D18C008ACCE0 /* bundle.css in Resources */ = {isa = PBXBuildFile; fileRef = B6AC6B7A2691D18C008ACCE0 /* bundle.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6A969122692402F004ACC17 /* bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = bundle.css; path = ../../../popup/public/bundle.css; sourceTree = "<group>"; };
+		B6A969132692402F004ACC17 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = bundle.js; path = ../../../popup/public/bundle.js; sourceTree = "<group>"; };
+		B6A969142692402F004ACC17 /* bundle.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = bundle.js.map; path = ../../../popup/public/bundle.js.map; sourceTree = "<group>"; };
 		B6AC6B182691D148008ACCE0 /* ReduxMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AC6B1B2691D148008ACCE0 /* ReduxMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReduxMonitor.entitlements; sourceTree = "<group>"; };
 		B6AC6B1C2691D148008ACCE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,12 +89,9 @@
 		B6AC6B5B2691D150008ACCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6AC6B5C2691D150008ACCE0 /* ReduxMonitor_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReduxMonitor_Extension.entitlements; sourceTree = "<group>"; };
 		B6AC6B742691D18C008ACCE0 /* background.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		B6AC6B752691D18C008ACCE0 /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = "<group>"; };
 		B6AC6B762691D18C008ACCE0 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		B6AC6B772691D18C008ACCE0 /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		B6AC6B782691D18C008ACCE0 /* bundle.js.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = bundle.js.map; sourceTree = "<group>"; };
 		B6AC6B792691D18C008ACCE0 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		B6AC6B7A2691D18C008ACCE0 /* bundle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = bundle.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,9 +204,9 @@
 			isa = PBXGroup;
 			children = (
 				B6AC6B742691D18C008ACCE0 /* background.js */,
-				B6AC6B7A2691D18C008ACCE0 /* bundle.css */,
-				B6AC6B752691D18C008ACCE0 /* bundle.js */,
-				B6AC6B782691D18C008ACCE0 /* bundle.js.map */,
+				B6A969122692402F004ACC17 /* bundle.css */,
+				B6A969132692402F004ACC17 /* bundle.js */,
+				B6A969142692402F004ACC17 /* bundle.js.map */,
 				B6AC6B792691D18C008ACCE0 /* content.js */,
 				B6AC6B762691D18C008ACCE0 /* index.html */,
 				B6AC6B772691D18C008ACCE0 /* manifest.json */,
@@ -368,10 +368,10 @@
 				B6AC6B7D2691D18C008ACCE0 /* index.html in Resources */,
 				B6AC6B4E2691D150008ACCE0 /* images in Resources */,
 				B6AC6B7B2691D18C008ACCE0 /* background.js in Resources */,
-				B6AC6B802691D18C008ACCE0 /* bundle.css in Resources */,
-				B6AC6B7C2691D18C008ACCE0 /* bundle.js in Resources */,
 				B6AC6B7E2691D18C008ACCE0 /* manifest.json in Resources */,
 				B6AC6B7F2691D18C008ACCE0 /* content.js in Resources */,
+				B6A969152692402F004ACC17 /* bundle.css in Resources */,
+				B6A969162692402F004ACC17 /* bundle.js in Resources */,
 				B6AC6B4C2691D150008ACCE0 /* _locales in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +564,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ReduxMonitor Extension/ReduxMonitor_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ReduxMonitor Extension/Info.plist";
@@ -586,6 +587,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ReduxMonitor Extension/ReduxMonitor_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ReduxMonitor Extension/Info.plist";
@@ -612,6 +614,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReduxMonitor/ReduxMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReduxMonitor/Info.plist;
@@ -636,6 +639,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReduxMonitor/ReduxMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReduxMonitor/Info.plist;
