@@ -7,12 +7,6 @@ esbuildServe(
     // minify: true,
     sourcemap: true,
     // target: ['chrome58', 'firefox57', 'safari11', 'edge16'],
-    watch: {
-      onRebuild(error, result) {
-        if (error) console.error('Watch build failed:', error)
-        else console.log('Watch build succeeded.')
-      },
-    },
     tsconfig: 'tsconfig.json',
     outfile: './public/bundle.js',
     // splitting: true,
@@ -26,6 +20,12 @@ esbuildServe(
       '.svg': 'dataurl',
       '.ttf': 'dataurl',
       '.woff': 'dataurl',
+    },
+    watch: {
+      onRebuild(error, result) {
+        if (error) console.error('Watch build failed:', error)
+        else console.log('Watch build succeeded.')
+      },
     },
   },
   {
