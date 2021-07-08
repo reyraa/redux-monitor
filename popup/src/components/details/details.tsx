@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import ReactJson from 'react-json-view';
+import RadioButton from '../shared/radioButton';
+
+type Options = {
+  collapsed: number,
+  theme?: string,
+}
 
 const ReduxState = ({
   actions, state, settings, settingsUpdated,
@@ -7,8 +13,16 @@ const ReduxState = ({
   const onChange = (e: any) => settingsUpdated({
     source: e.target.value,
   });
+  const options: Options = {
+    collapsed: 1,
+  };
 
-  const json = settings.source === 'state' ? state : actions[settings.selectedAction]
+  const json = settings.source === 'state' ? state : actions[settings.selectedAction];
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+  // const theme = darkThemeMq.matches ? 'railscasts' : 'rjv-default';
+  if (darkThemeMq.matches) {
+    options.theme = 'railscasts';
+  }
 
   return (
     <main className="state">
@@ -22,38 +36,31 @@ const ReduxState = ({
             </span>
           </div>
           <div className="cta-buttons">
-            <input
-              type="radio"
+            <RadioButton
               id="action-source"
               name="source-group"
               value="actions"
-              checked={settings.source === 'actions'}
+              title="Action"
               onChange={onChange}
+              valueRef={settings.source}
+              icon="ico-action"
             />
-            <label htmlFor="action-source" className="box button">
-              <span className="button-icon icon-action"></span>
-              <span className="button-text">Action</span>
-            </label>
-            <input
-              type="radio"
+            <RadioButton
               id="state-source"
               name="source-group"
               value="state"
-              checked={settings.source === 'state'}
+              title="State"
               onChange={onChange}
+              valueRef={settings.source}
+              icon="ico-state"
             />
-            <label htmlFor="state-source" className="box button">
-              <span className="button-icon icon-state"></span>
-              <span className="button-text">State</span>
-            </label>
           </div>
       </header>
       <section className="box">
         <div className="scroll-view">
           <ReactJson
-            theme="railscasts"
-            collapsed={1}
             src={json}
+            {...options}
           />
         </div>
       </section>
