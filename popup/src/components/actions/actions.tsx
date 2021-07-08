@@ -1,15 +1,6 @@
 import React from 'react';
-
-const ActionItem = ({
-  action, actionSelected, index, selectedAction,
-}) => (
-  <li
-    onClick={() => actionSelected(index)}
-    className={selectedAction === index ? 'selected' : ''}
-  >
-    <span>{action.type}</span>
-  </li>
-);
+import ActionItem from './actionItem';
+import Button from '../shared/button';
 
 const Actions = ({
   actions, actionsCleared, settingsUpdated, selectedAction,
@@ -28,10 +19,11 @@ const Actions = ({
             <h2>Actions</h2>
             <span className="subtitle">Click for details</span>
           </div>
-          <button className="box button" onClick={actionsCleared}>
-            <span className="button-icon icon-clear"></span>
-            <span className="button-text">Clear</span>
-          </button>
+          <Button
+            onClick={actionsCleared}
+            title="Clear"
+            icon="ico-clear"
+          />
       </header>
       <section className="box">
         <div className="scroll-view">
