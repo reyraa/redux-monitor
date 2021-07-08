@@ -7,7 +7,7 @@ A monitoring tool for debugging [Redux](https://github.com/reactjs/redux)-based 
 ## Installation
 This application has two parts:
 - The Safari extension, current repository, which you can find on the [App Store](https://apps.apple.com/us/app/redux-monitor/id1575132553). 
-- The spy, which you can install as a yarn/npm dependency. 
+- [The spy](https://www.npmjs.com/package/redux-monitor-spy), which you can install as a yarn/npm dependency. 
 
 
 ### Browser extension
