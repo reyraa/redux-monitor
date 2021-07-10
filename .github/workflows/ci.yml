@@ -23,14 +23,12 @@ jobs:
 
       # Installs npm dependecies to prepare for the next jobs
       - name: Install dependencies
-        run: npm ci
+        run: cd popup && npm ci
 
       # Runs installed linter to ensure sytax quality
       - name: Run linter
-        run: npm run lint
+        run: cd popup && npm run lint
 
-      # Runs a set of commands using the runners shell
-      # - name: Run a multi-line script
-      #  run: |
-      #    echo Add other actions to build,
-      #    echo test, and deploy your project.
+      # Runs installed linter to ensure sytax quality
+      - name: Build popup
+        run: cd popup && npm run build:prod
