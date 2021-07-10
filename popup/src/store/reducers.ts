@@ -47,15 +47,12 @@ const stateReducer = (state = {}, action: StateAction): State => {
   }
 };
 
-const defaultSettings = {
-  source: 'state',
-  selectedAction: null,
-  extensionStatus: 'notInitiated',
-};
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
 
 type Settings = {
-  source: string,
-  selectedAction: number | null,
+  source: Source,
   extensionStatus: string,
 }
 
@@ -63,6 +60,11 @@ type SettingsAction = {
   type: string,
   data: Settings
 }
+
+const defaultSettings: Settings = {
+  source: { name: 'state', index: null },
+  extensionStatus: 'notInitiated',
+};
 
 const settingsReducer = (state = defaultSettings, action: SettingsAction): Settings => {
   switch (action.type) {
