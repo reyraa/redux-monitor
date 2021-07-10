@@ -34,3 +34,6 @@
 .ico-clear:before {
   content: "\e901";
 }
+.ico-search:before {
+  content: "\e911";
+}
