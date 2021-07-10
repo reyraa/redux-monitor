@@ -1,7 +1,12 @@
 import { settingsUpdated } from './actions';
 import actionDict from './actionTypes';
 
-const actionsMiddleware = (store: any) => (next: any) => (action: any) => {
+type Action = {
+  type: string,
+  data?: any
+}
+
+const actionsMiddleware = (store: any) => (next: (param: Action) => void) => (action: Action): void => {
   const { settings, actions } = store.getState();
   switch (action.type) {
     case actionDict.settingsUpdated: {

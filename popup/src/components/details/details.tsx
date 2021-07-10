@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import ReactJson from 'react-json-view';
 import RadioButton from '../shared/radioButton';
 
@@ -36,7 +36,7 @@ const ReduxState: React.FC<Props> = ({
   settings,
   settingsUpdated,
 }) => {
-  const onChange = (e: any) => settingsUpdated({
+  const onChange = (e: ChangeEvent<HTMLInputElement>): void => settingsUpdated({
     source: e.target.value,
   });
   const options: Options = {

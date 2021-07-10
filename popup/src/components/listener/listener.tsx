@@ -1,10 +1,30 @@
 import React, { useEffect } from "react";
 
+type Meta = {
+  date: Date,
+}
+
+type Action = {
+  type: string,
+  data: any,
+  meta: Meta
+}
+
+type Settings = {
+  source: 'state' | 'actions',
+  selectedAction: null | number,
+  extensionStatus: string,
+};
+
+type State = {
+  [key: string]: any
+}
+
 interface Props {
-  actionAdded: (data: any) => void,
-  stateUpdated: (data: any) => void,
-  settingsUpdated: (data: any) => void,
-  actionsRetrieved: (data: any) => void,
+  actionAdded: (data: Action) => void,
+  stateUpdated: (data: State) => void,
+  settingsUpdated: (data: Partial<Settings>) => void,
+  actionsRetrieved: (data: Action[]) => void,
 }
 
 const Listener: React.FC<Props> = ({
