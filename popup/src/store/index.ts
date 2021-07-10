@@ -1,9 +1,8 @@
 import {
-  createStore, combineReducers, applyMiddleware, compose,
+  createStore, combineReducers,
 } from 'redux';
-import middleWares from './middlewares';
 import reducers from './reducers';
 
 const App = combineReducers(reducers);
-const store = createStore(App, compose(applyMiddleware(...middleWares)));
+const store = createStore(App);
 export default store;
