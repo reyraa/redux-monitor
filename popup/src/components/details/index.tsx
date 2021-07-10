@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Details from './details';
-import { settingsUpdated } from "../../store/action";
+import { settingsUpdated } from "../../store/actions";
 
 const mapStateToProps = (state: any) => ({
   state: state.state,

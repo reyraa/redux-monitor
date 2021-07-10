@@ -2,8 +2,28 @@ import React from 'react';
 import ActionItem from './actionItem';
 import Button from '../shared/button';
 
-const Actions = ({
-  actions, actionsCleared, settingsUpdated, selectedAction,
+type Meta = {
+  date: Date,
+}
+
+type Action = {
+  type: string,
+  data: any,
+  meta: Meta
+}
+
+type Props = {
+  actions: Action[],
+  actionsCleared: () => void,
+  settingsUpdated: (data: any) => void,
+  selectedAction:  number,
+}
+
+const Actions: React.FC<Props> = ({
+  actions,
+  actionsCleared,
+  settingsUpdated,
+  selectedAction,
 }) => {
   const actionSelected = (index: number) => {
     settingsUpdated({

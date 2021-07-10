@@ -1,5 +1,5 @@
-import { settingsUpdated } from './action';
-import actionDict from './actionDict';
+import { settingsUpdated } from './actions';
+import actionDict from './actionTypes';
 
 const actionsMiddleware = (store: any) => (next: any) => (action: any) => {
   const { settings, actions } = store.getState();

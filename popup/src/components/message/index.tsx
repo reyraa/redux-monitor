@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import icon from '../../assets/images/icon-256.png';
 
-const Message = () => {
+type Props = {
+  
+}
+
+const Message: React.FC<Props> = () => {
   useEffect(() => {
     const wrapper = document.getElementById('app');
     if (wrapper) {
@@ -17,10 +21,11 @@ const Message = () => {
         <span>Monitor Redux store</span>
 
         <p>
-          Listening for Redux actions. If you haven't set up Safari Redux devtools on this website, read the
+          Listening for Redux actions. If you haven&apos;t set up Safari Redux devtools on this website, read the
           <a
             href="https://github.com/reyraa/reduxMonitor"
             target="_blank"
+            rel="noreferrer"
           >
             documents
           </a>

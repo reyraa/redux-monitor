@@ -1,20 +1,18 @@
 import React, { useEffect } from "react";
 
-interface ListenerParams {
+interface Props {
   actionAdded: (data: any) => void,
   stateUpdated: (data: any) => void,
   settingsUpdated: (data: any) => void,
   actionsRetrieved: (data: any) => void,
-  extensionStatus: string,
 }
 
-const Listener = ({
+const Listener: React.FC<Props> = ({
   actionAdded,
   stateUpdated,
   settingsUpdated,
   actionsRetrieved,
-  extensionStatus,
-}: ListenerParams) => {
+}) => {
   useEffect(() => {
     try {
       browser.runtime.onMessage.addListener((message: any) => {

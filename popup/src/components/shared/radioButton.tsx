@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 
-const RadioButton = ({
-  id, name, value, title, children, onChange, valueRef, icon,
+type Props = {
+  id: string,
+  name: string,
+  value: string | number | readonly string[] | undefined,
+  title?: string,
+  children?: React.ReactNode,
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void,
+  valueRef: any,
+  icon: string,
+}
+
+const RadioButton: React.FC<Props> = ({
+  id,
+  name,
+  value,
+  title,
+  children,
+  onChange,
+  valueRef,
+  icon,
 }) => (
   <>
     <input

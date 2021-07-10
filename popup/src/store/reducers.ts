@@ -1,23 +1,46 @@
-import actionDict from "./actionDict";
+import ActionTypes from "./actionTypes";
 
-const actionsReducer = (state = [], action:any) => {
+type Meta = {
+  date: Date,
+}
+
+type Action = {
+  type: string,
+  data: any,
+  meta: Meta
+}
+
+type ActionsAction = 
+  | { type: ActionTypes.actionsRetrieved, data: Action[] }
+  | { type: ActionTypes.actionAdded, data: Action }
+  | { type: ActionTypes.actionsCleared }
+
+const actionsReducer = (state: Action[] = [], action: ActionsAction): Action[] => {
   switch (action.type) {
-    case actionDict.actionsRetrieved:
+    case ActionTypes.actionsRetrieved:
       return action.data;
-    case actionDict.actionAdded:
+    case ActionTypes.actionAdded:
       return [...state, action.data]
-    case actionDict.actionsCleared:
+    case ActionTypes.actionsCleared:
       return []
     default:
       return state
   }
 };
 
-const stateReducer = (state = {}, action:any) => {
+type State = {
+  [key: string]: any
+}
+
+type StateAction =
+ | { type: ActionTypes.stateUpdated, data: State }
+ | { type: ActionTypes.stateReset }
+
+const stateReducer = (state = {}, action: StateAction): State => {
   switch (action.type) {
-    case actionDict.stateUpdated:
+    case ActionTypes.stateUpdated:
       return action.data
-    case actionDict.stateReset:
+    case ActionTypes.stateReset:
       return {}
     default:
       return state
@@ -30,11 +53,22 @@ const defaultSettings = {
   extensionStatus: 'notInitiated',
 };
 
-const settingsReducer = (state = defaultSettings, action:any) => {
+type Settings = {
+  source: string,
+  selectedAction: number | null,
+  extensionStatus: string,
+}
+
+type SettingsAction = {
+  type: string,
+  data: Settings
+}
+
+const settingsReducer = (state = defaultSettings, action: SettingsAction): Settings => {
   switch (action.type) {
-    case actionDict.settingsUpdated:
+    case ActionTypes.settingsUpdated:
       return { ...state, ...action.data }
-    case actionDict.settingsReset:
+    case ActionTypes.settingsReset:
       return defaultSettings
     default:
       return state

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Actions from '../actions';
 import Details from '../details';
 
-const Panel = () => {
+const Panel: React.FC = () => {
   useEffect(() => {
     const wrapper = document.getElementById('app');
     if (wrapper) {

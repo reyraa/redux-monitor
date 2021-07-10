@@ -1,14 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactJson from 'react-json-view';
 import RadioButton from '../shared/radioButton';
+
+type Meta = {
+  date: Date,
+}
+
+type Action = {
+  type: string,
+  data: any,
+  meta: Meta
+}
+
+type Settings = {
+  source: 'state' | 'actions',
+  selectedAction: null | number,
+  extensionStatus: string,
+};
+
+type Props = {
+  actions: Action[],
+  state: any,
+  settings: Settings,
+  settingsUpdated: any,
+}
 
 type Options = {
   collapsed: number,
   theme?: string,
 }
 
-const ReduxState = ({
-  actions, state, settings, settingsUpdated,
+const ReduxState: React.FC<Props> = ({
+  actions,
+  state,
+  settings,
+  settingsUpdated,
 }) => {
   const onChange = (e: any) => settingsUpdated({
     source: e.target.value,
@@ -19,7 +45,6 @@ const ReduxState = ({
 
   const json = settings.source === 'state' ? state : actions[settings.selectedAction];
   const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-  // const theme = darkThemeMq.matches ? 'railscasts' : 'rjv-default';
   if (darkThemeMq.matches) {
     options.theme = 'railscasts';
   }
