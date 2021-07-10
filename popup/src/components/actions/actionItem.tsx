@@ -1,4 +1,5 @@
 import React from 'react';
+import Time from './time';
 
 type Meta = {
   date: Date,
@@ -14,7 +15,8 @@ type Props = {
   action: Action,
   onSelect: (index: number) => void,
   index: number,
-  isSelected: boolean
+  isSelected: boolean,
+  prevDate?: Date,
 }
 
 const ActionItem: React.FC<Props> = ({
@@ -22,13 +24,19 @@ const ActionItem: React.FC<Props> = ({
   onSelect,
   index,
   isSelected,
+  prevDate,
 }) => (
   <li
     onClick={() => onSelect(index)}
     className={isSelected ? 'selected' : ''}
   >
-    <span className="type">{action.type}</span>
-    {/* <time>{action.meta.date}</time> */}
+    <div>
+      <span className="type">{action.type}</span>
+      <Time
+        date={action.meta.date}
+        prevDate={prevDate}
+      />
+    </div>
   </li>
 );
 

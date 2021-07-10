@@ -61,6 +61,7 @@ const Actions: React.FC<Props> = ({
                 <ActionItem
                   key={`${item.type}-${index}`}
                   action={item}
+                  prevDate={index > 0 ? actions[index - 1].meta.date : undefined}
                   onSelect={actionSelected}
                   index={index}
                   isSelected={index === source.index}
