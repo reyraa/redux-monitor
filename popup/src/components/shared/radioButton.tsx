@@ -27,7 +27,7 @@ const RadioButton: React.FC<Props> = ({
       id={id}
       name={name}
       value={value}
-      checked={valueRef === 'actions'}
+      checked={valueRef === value}
       onChange={onChange}
     />
     <label htmlFor={id} className="box button">
