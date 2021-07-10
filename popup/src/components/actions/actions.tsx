@@ -2,13 +2,41 @@ import React from 'react';
 import ActionItem from './actionItem';
 import Button from '../shared/button';
 
-const Actions = ({
-  actions, actionsCleared, settingsUpdated, selectedAction,
+type Meta = {
+  date: Date,
+}
+
+type Action = {
+  type: string,
+  data: any,
+  meta: Meta
+}
+
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
+
+type Settings = {
+  source: Source,
+  extensionStatus: string,
+}
+
+type Props = {
+  actions: Action[],
+  actionsCleared: () => void,
+  settingsUpdated: (data: Partial<Settings>) => void,
+  source:  Source,
+}
+
+const Actions: React.FC<Props> = ({
+  actions,
+  actionsCleared,
+  settingsUpdated,
+  source,
 }) => {
   const actionSelected = (index: number) => {
     settingsUpdated({
-      selectedAction: index,
-      source: 'actions',
+      source: { name: 'actions', index }
     });
   };
 
@@ -33,9 +61,10 @@ const Actions = ({
                 <ActionItem
                   key={`${item.type}-${index}`}
                   action={item}
-                  actionSelected={actionSelected}
+                  prevDate={index > 0 ? actions[index - 1].meta.date : undefined}
+                  onSelect={actionSelected}
                   index={index}
-                  selectedAction={selectedAction}
+                  isSelected={index === source.index}
                 />
               ))
             }

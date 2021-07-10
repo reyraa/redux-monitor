@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
 # Controls when the workflow will run
@@ -13,28 +11,24 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Steps representing the installation process
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      # Runs a single command using the runners shell
+
+      # Installs npm dependecies to prepare for the next jobs
       - name: Install dependencies
-        run: sh 'npm ci'
+        run: cd popup && npm ci
 
-      # Runs a single command using the runners shell
+      # Runs installed linter to ensure sytax quality
       - name: Run linter
-        run: sh 'npm run lint'
+        run: cd popup && npm run lint
 
-      # Runs a set of commands using the runners shell
-      # - name: Run a multi-line script
-      #  run: |
-      #    echo Add other actions to build,
-      #    echo test, and deploy your project.
+      # Runs installed linter to ensure sytax quality
+      - name: Build popup
+        run: cd popup && npm run build:prod

@@ -2,16 +2,39 @@ import { connect } from 'react-redux';
 import Listener from './listener';
 import {
   stateUpdated, actionAdded, settingsUpdated, actionsRetrieved,
-} from "../../store/action";
+} from "../../store/actions";
 
-const mapStateToProps = (state: any) => ({
+type Meta = {
+  date: Date,
+}
+
+type Action = {
+  type: string,
+  data: any,
+  meta: Meta
+}
+
+type State = {
+  [key: string]: any
+}
+
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
+
+type Settings= {
+  source: Source,
+  extensionStatus: string,
+}
+
+const mapStateToProps = (state: State) => ({
   extensionStatus: state.settings.extensionStatus,
 });
-const mapDispatchToProps = (dispatch: any) => ({
-  settingsUpdated: (data: any) => dispatch(settingsUpdated(data)),
-  actionAdded: (data: any) => dispatch(actionAdded(data)),
-  stateUpdated: (data: any) => dispatch(stateUpdated(data)),
-  actionsRetrieved: (data: any) => dispatch(actionsRetrieved(data)),
+const mapDispatchToProps = (dispatch) => ({
+  settingsUpdated: (data: Partial<Settings>) => dispatch(settingsUpdated(data)),
+  actionAdded: (data: Action) => dispatch(actionAdded(data)),
+  stateUpdated: (data: State) => dispatch(stateUpdated(data)),
+  actionsRetrieved: (data: Action[]) => dispatch(actionsRetrieved(data)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Listener);

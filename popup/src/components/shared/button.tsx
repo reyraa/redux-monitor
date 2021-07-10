@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 
-const IconButton = ({
+type Props = {
+  onClick: (e: MouseEvent<HTMLButtonElement>) => void,
+  title: string,
+  children?: React.ReactNode,
+  icon: string,
+}
+
+const IconButton: React.FC<Props> = ({
   onClick, title, children, icon,
 }) => (
   <button className="box button" onClick={onClick}>

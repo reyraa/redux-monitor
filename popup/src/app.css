@@ -211,22 +211,57 @@ ASIDE / ACTIONS
     border-bottom: none;
 }
 
-.actions li span {
+.actions li div {
     border-radius: 5px;
     display: inline-block;
     width: 100%;
-    line-height: 26px;
+    line-height: 30px;
     padding: 0 5px;
     margin: 0 -5px;
 }
 
-.actions li:hover span {
+.actions li span {
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+}
+
+.actions li time {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-size: 10px;
+    line-height: 11px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.actions li:hover .relative {
+    z-index: 1;
+}
+
+.actions li .absolute {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    left: 0;
+}
+
+.actions li.selected div,
+.actions li:hover div {
     background: rgba(0, 0, 0, 0.06);
 }
 
-.actions li.selected span {
-    background: rgba(0, 0, 0, 0.06);
-    color: #3686F7;
+.actions li.selected .relative,
+.actions li:hover .relative {
+    z-index: -1;
+    opacity: 0;
+}
+
+.actions li.selected .absolute,
+.actions li:hover .absolute {
+    z-index: 1;
+    opacity: 1;
 }
 
 /********************
@@ -349,12 +384,8 @@ Message
         border-bottom: solid 1px rgba(184, 184, 183, 0.5);
     }
 
-    .actions li:hover span {
+    .actions li.selected div,
+    .actions li:hover div {
         background: rgba(255, 255, 255, 0.15);
-    }
-
-    .actions li.selected span {
-        background: #FFFFFF;
-        color: #3686F7;
     }
 }

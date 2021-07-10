@@ -1,25 +1,51 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent } from 'react';
 import ReactJson from 'react-json-view';
 import RadioButton from '../shared/radioButton';
+
+type Meta = {
+  date: Date,
+}
+
+type Action = {
+  type: string,
+  data: any,
+  meta: Meta
+}
+
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
+
+type Props = {
+  actions: Action[],
+  state: any,
+  source: Source,
+  settingsUpdated: any,
+}
 
 type Options = {
   collapsed: number,
   theme?: string,
 }
 
-const ReduxState = ({
-  actions, state, settings, settingsUpdated,
+const ReduxState: React.FC<Props> = ({
+  actions,
+  state,
+  source,
+  settingsUpdated,
 }) => {
-  const onChange = (e: any) => settingsUpdated({
-    source: e.target.value,
-  });
+  const onChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    const name = e.target.value;
+    settingsUpdated({
+      source: { name, index: name === 'state' ? null : actions.length - 1}
+    })
+  };
   const options: Options = {
     collapsed: 1,
   };
 
-  const json = settings.source === 'state' ? state : actions[settings.selectedAction];
+  const json = source.name === 'state' ? state : actions[source.index];
   const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-  // const theme = darkThemeMq.matches ? 'railscasts' : 'rjv-default';
   if (darkThemeMq.matches) {
     options.theme = 'railscasts';
   }
@@ -31,7 +57,7 @@ const ReduxState = ({
             <h2>State</h2>
             <span className="subtitle">
               {
-                settings.source === 'state' ? 'Redux store' : 'Action details'
+                source.name === 'state' ? 'Redux store' : 'Action details'
               }
             </span>
           </div>
@@ -42,7 +68,7 @@ const ReduxState = ({
               value="actions"
               title="Action"
               onChange={onChange}
-              valueRef={settings.source}
+              valueRef={source.name}
               icon="ico-action"
             />
             <RadioButton
@@ -51,7 +77,7 @@ const ReduxState = ({
               value="state"
               title="State"
               onChange={onChange}
-              valueRef={settings.source}
+              valueRef={source.name}
               icon="ico-state"
             />
           </div>
