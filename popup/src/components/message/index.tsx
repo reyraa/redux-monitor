@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react';
 import icon from '../../assets/images/icon-256.png';
 
-type Props = {
-  
-}
-
-const Message: React.FC<Props> = () => {
+const Message: React.FC = () => {
   useEffect(() => {
     const wrapper = document.getElementById('app');
     if (wrapper) {
