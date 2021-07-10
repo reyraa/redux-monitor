@@ -24,9 +24,12 @@ type DataLessAction = {
   type: string
 }
 
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
+
 type SettingsProps = {
-  source: string,
-  selectedAction: number | null,
+  source: Source,
   extensionStatus: string,
 }
 

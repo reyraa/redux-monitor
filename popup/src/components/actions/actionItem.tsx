@@ -12,20 +12,20 @@ type Action = {
 
 type Props = {
   action: Action,
-  actionSelected: (index: number) => any,
+  onSelect: (index: number) => void,
   index: number,
-  selectedAction: number
+  isSelected: boolean
 }
 
 const ActionItem: React.FC<Props> = ({
   action,
-  actionSelected,
+  onSelect,
   index,
-  selectedAction,
+  isSelected,
 }) => (
   <li
-    onClick={() => actionSelected(index)}
-    className={selectedAction === index ? 'selected' : ''}
+    onClick={() => onSelect(index)}
+    className={isSelected ? 'selected' : ''}
   >
     <span className="type">{action.type}</span>
     {/* <time>{action.meta.date}</time> */}

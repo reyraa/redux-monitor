@@ -12,16 +12,14 @@ type Action = {
   meta: Meta
 }
 
-type Settings = {
-  source: 'state' | 'actions',
-  selectedAction: null | number,
-  extensionStatus: string,
-};
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
 
 type Props = {
   actions: Action[],
   state: any,
-  settings: Settings,
+  source: Source,
   settingsUpdated: any,
 }
 
@@ -33,17 +31,20 @@ type Options = {
 const ReduxState: React.FC<Props> = ({
   actions,
   state,
-  settings,
+  source,
   settingsUpdated,
 }) => {
-  const onChange = (e: ChangeEvent<HTMLInputElement>): void => settingsUpdated({
-    source: e.target.value,
-  });
+  const onChange = (e: ChangeEvent<HTMLInputElement>): void => {
+    const name = e.target.value;
+    settingsUpdated({
+      source: { name, index: name === 'state' ? null : actions.length - 1}
+    })
+  };
   const options: Options = {
     collapsed: 1,
   };
 
-  const json = settings.source === 'state' ? state : actions[settings.selectedAction];
+  const json = source.name === 'state' ? state : actions[source.index];
   const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
   if (darkThemeMq.matches) {
     options.theme = 'railscasts';
@@ -56,7 +57,7 @@ const ReduxState: React.FC<Props> = ({
             <h2>State</h2>
             <span className="subtitle">
               {
-                settings.source === 'state' ? 'Redux store' : 'Action details'
+                source.name === 'state' ? 'Redux store' : 'Action details'
               }
             </span>
           </div>
@@ -67,7 +68,7 @@ const ReduxState: React.FC<Props> = ({
               value="actions"
               title="Action"
               onChange={onChange}
-              valueRef={settings.source}
+              valueRef={source.name}
               icon="ico-action"
             />
             <RadioButton
@@ -76,7 +77,7 @@ const ReduxState: React.FC<Props> = ({
               value="state"
               title="State"
               onChange={onChange}
-              valueRef={settings.source}
+              valueRef={source.name}
               icon="ico-state"
             />
           </div>

@@ -18,9 +18,12 @@ type State = {
   [key: string]: any
 }
 
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
+
 type Settings= {
-  source: string,
-  selectedAction: number | null,
+  source: Source,
   extensionStatus: string,
 }
 

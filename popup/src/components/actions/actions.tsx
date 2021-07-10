@@ -12,23 +12,31 @@ type Action = {
   meta: Meta
 }
 
+type Source =
+  | { name: 'state', index: null }
+  | { name: 'actions', index: number }
+
+type Settings = {
+  source: Source,
+  extensionStatus: string,
+}
+
 type Props = {
   actions: Action[],
   actionsCleared: () => void,
-  settingsUpdated: (data: any) => void,
-  selectedAction:  number,
+  settingsUpdated: (data: Partial<Settings>) => void,
+  source:  Source,
 }
 
 const Actions: React.FC<Props> = ({
   actions,
   actionsCleared,
   settingsUpdated,
-  selectedAction,
+  source,
 }) => {
   const actionSelected = (index: number) => {
     settingsUpdated({
-      selectedAction: index,
-      source: 'actions',
+      source: { name: 'actions', index }
     });
   };
 
@@ -53,9 +61,9 @@ const Actions: React.FC<Props> = ({
                 <ActionItem
                   key={`${item.type}-${index}`}
                   action={item}
-                  actionSelected={actionSelected}
+                  onSelect={actionSelected}
                   index={index}
-                  selectedAction={selectedAction}
+                  isSelected={index === source.index}
                 />
               ))
             }
