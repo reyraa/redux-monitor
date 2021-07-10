@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import ActionItem from './actionItem';
 import Button from '../shared/button';
+import Input from '../shared/input';
 
 type Meta = {
   date: Date,
@@ -34,11 +35,19 @@ const Actions: React.FC<Props> = ({
   settingsUpdated,
   source,
 }) => {
+  const [query, setQuery] = useState('');
   const actionSelected = (index: number) => {
     settingsUpdated({
       source: { name: 'actions', index }
     });
   };
+
+  const onSearch = (e: ChangeEvent<HTMLInputElement>): void => {
+    setQuery(e.target.value);
+  };
+  
+  const filteredList = query.length > 2
+    ? actions.filter(item => item.type.includes(query)) : actions;
 
   return (
     <aside className="actions">
@@ -54,10 +63,16 @@ const Actions: React.FC<Props> = ({
           />
       </header>
       <section className="box">
+        <Input
+          icon="ico-search"
+          placeholder="Filter"
+          onChange={onSearch}
+          value={query}
+        />
         <div className="scroll-view">
           <ul id="action-list">
             {
-              actions.map((item, index) => (
+              filteredList.map((item, index) => (
                 <ActionItem
                   key={`${item.type}-${index}`}
                   action={item}
