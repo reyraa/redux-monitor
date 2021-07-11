@@ -1,15 +1,6 @@
 import React from 'react';
 import Time from './time';
-
-type Meta = {
-  date: Date,
-}
-
-type Action = {
-  type: string,
-  data: any,
-  meta: Meta
-}
+import { Action } from '../../store/reducers';
 
 type Props = {
   action: Action,

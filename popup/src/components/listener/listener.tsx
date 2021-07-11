@@ -1,20 +1,5 @@
 import React, { useEffect } from "react";
-
-type Meta = {
-  date: Date,
-}
-
-type Action = {
-  type: string,
-  data: any,
-  meta: Meta
-}
-
-type Settings = {
-  source: 'state' | 'actions',
-  selectedAction: null | number,
-  extensionStatus: string,
-};
+import { Action, Settings } from '../../store/reducers';
 
 type State = {
   [key: string]: any

@@ -4,16 +4,20 @@ type Meta = {
   date: Date,
 }
 
-type Action = {
+export type Action = {
   type: string,
   data: any,
   meta: Meta
 }
 
+export type ActionsRetrieved = { type: ActionTypes.actionsRetrieved, data: Action[] };
+export type ActionAdded = { type: ActionTypes.actionAdded, data: Action };
+export type ActionsCleared = { type: ActionTypes.actionsCleared };
+
 type ActionsAction = 
-  | { type: ActionTypes.actionsRetrieved, data: Action[] }
-  | { type: ActionTypes.actionAdded, data: Action }
-  | { type: ActionTypes.actionsCleared }
+  | ActionsRetrieved
+  | ActionAdded
+  | ActionsCleared
 
 const actionsReducer = (state: Action[] = [], action: ActionsAction): Action[] => {
   switch (action.type) {
@@ -28,13 +32,13 @@ const actionsReducer = (state: Action[] = [], action: ActionsAction): Action[] =
   }
 };
 
-type State = {
-  [key: string]: any
-}
+export type State = { [key: string]: any }
+export type StateUpdated = { type: ActionTypes.stateUpdated, data: State }
+export type StateReset = { type: ActionTypes.stateReset }
 
 type StateAction =
- | { type: ActionTypes.stateUpdated, data: State }
- | { type: ActionTypes.stateReset }
+ | StateUpdated
+ | StateReset
 
 const stateReducer = (state = {}, action: StateAction): State => {
   switch (action.type) {
@@ -47,19 +51,21 @@ const stateReducer = (state = {}, action: StateAction): State => {
   }
 };
 
-type Source =
+export type Source =
   | { name: 'state', index: null }
   | { name: 'actions', index: number }
 
-type Settings = {
+export type Settings = {
   source: Source,
   extensionStatus: string,
 }
 
-type SettingsAction = {
-  type: string,
-  data: Settings
-}
+export type SettingsUpdated = { type: ActionTypes.settingsUpdated, data: Partial<Settings> }
+export type SettingsReset = { type: ActionTypes.settingsReset }
+
+type SettingsAction = 
+ | SettingsUpdated
+ | SettingsReset
 
 const defaultSettings: Settings = {
   source: { name: 'state', index: null },

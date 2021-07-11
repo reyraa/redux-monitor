@@ -3,28 +3,10 @@ import Listener from './listener';
 import {
   stateUpdated, actionAdded, settingsUpdated, actionsRetrieved,
 } from "../../store/actions";
-
-type Meta = {
-  date: Date,
-}
-
-type Action = {
-  type: string,
-  data: any,
-  meta: Meta
-}
+import { Action, Settings } from '../../store/reducers';
 
 type State = {
   [key: string]: any
-}
-
-type Source =
-  | { name: 'state', index: null }
-  | { name: 'actions', index: number }
-
-type Settings= {
-  source: Source,
-  extensionStatus: string,
 }
 
 const mapStateToProps = (state: State) => ({

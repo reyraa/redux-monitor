@@ -1,15 +1,7 @@
 import { connect } from 'react-redux';
 import Actions from './actions';
 import { actionsCleared, settingsUpdated } from "../../store/actions";
-
-type Source =
-  | { name: 'state', index: null }
-  | { name: 'actions', index: number }
-
-type Settings = {
-  source: Source,
-  extensionStatus: string,
-}
+import { Settings } from '../../store/reducers';
 
 const mapStateToProps = (state: any) => ({
   actions: state.actions,

@@ -1,20 +1,7 @@
 import React, { ChangeEvent } from 'react';
 import ReactJson from 'react-json-view';
 import RadioButton from '../shared/radioButton';
-
-type Meta = {
-  date: Date,
-}
-
-type Action = {
-  type: string,
-  data: any,
-  meta: Meta
-}
-
-type Source =
-  | { name: 'state', index: null }
-  | { name: 'actions', index: number }
+import { Action, Source } from '../../store/reducers';
 
 type Props = {
   actions: Action[],

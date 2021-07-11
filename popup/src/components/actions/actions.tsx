@@ -2,25 +2,11 @@ import React, { useState, ChangeEvent } from 'react';
 import ActionItem from './actionItem';
 import Button from '../shared/button';
 import Input from '../shared/input';
-
-type Meta = {
-  date: Date,
-}
-
-type Action = {
-  type: string,
-  data: any,
-  meta: Meta
-}
-
-type Source =
-  | { name: 'state', index: null }
-  | { name: 'actions', index: number }
-
-type Settings = {
-  source: Source,
-  extensionStatus: string,
-}
+import {
+  Action,
+  Source,
+  Settings,
+} from '../../store/reducers';
 
 type Props = {
   actions: Action[],

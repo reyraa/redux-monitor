@@ -1,51 +1,16 @@
 import ActionTypes from "./actionTypes";
-
-type Meta = {
-  date: Date,
-}
-
-type Action = {
-  type: string,
-  data: any,
-  meta: Meta
-}
-
-type ActionsRetrieved = {
-  type: string,
-  data: Action[]
-}
-
-type ActionAdded = {
-  type: string,
-  data: Action
-}
-
-type DataLessAction = {
-  type: string
-}
-
-type Source =
-  | { name: 'state', index: null }
-  | { name: 'actions', index: number }
-
-type SettingsProps = {
-  source: Source,
-  extensionStatus: string,
-}
-
-type SettingAction = {
-  type: string,
-  data: Partial<SettingsProps>
-}
-
-type StateProps = {
-  [key: string]: any
-}
-
-type StateAction = {
-  type: string,
-  data: StateProps
-}
+import {
+  State,
+  Settings,
+  Action,
+  ActionsRetrieved,
+  ActionAdded,
+  ActionsCleared,
+  StateUpdated,
+  StateReset,
+  SettingsUpdated,
+  SettingsReset,
+} from './reducers';
 
 export const actionsRetrieved = (data: Action[]): ActionsRetrieved => ({
   type: ActionTypes.actionsRetrieved,
@@ -57,24 +22,24 @@ export const actionAdded = (data: Action): ActionAdded => ({
   data,
 });
 
-export const actionsCleared = (): DataLessAction => ({
+export const actionsCleared = (): ActionsCleared => ({
   type: ActionTypes.actionsCleared,
 });
 
-export const stateUpdated= (data: StateProps): StateAction => ({
+export const stateUpdated= (data: State): StateUpdated => ({
   type: ActionTypes.stateUpdated,
   data,
 });
 
-export const stateReset = (): DataLessAction => ({
+export const stateReset = (): StateReset => ({
   type: ActionTypes.stateReset,
 });
 
-export const settingsUpdated = (data: Partial<SettingsProps>): SettingAction => ({
+export const settingsUpdated = (data: Partial<Settings>): SettingsUpdated => ({
   type: ActionTypes.settingsUpdated,
   data,
 });
 
-export const settingsReset = (): DataLessAction => ({
+export const settingsReset = (): SettingsReset => ({
   type: ActionTypes.settingsReset,
 });
