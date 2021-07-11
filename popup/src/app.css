@@ -110,7 +110,7 @@ input[type="radio"]:checked + .button .button-icon:before {
 }
 
 .input {
-    border-bottom: red 1px rgba(184, 184, 183, 0.5);
+    border-bottom: red 1px #5D5C5B;
     box-sizing: border-box;
     padding: 0 15px 10px;
     display: flex;
@@ -363,7 +363,7 @@ Message
     }
 
     .input {
-        border-bottom: solid 1px rgba(184, 184, 183, 0.5);
+        border-bottom: solid 1px #5D5C5B;
     }
 
     .button .button-icon:before {
