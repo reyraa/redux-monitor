@@ -1,10 +1,10 @@
 import React, { ChangeEvent } from 'react';
 import ReactJson from 'react-json-view';
 import RadioButton from '../shared/radioButton';
-import { Action, Source } from '../../store/reducers';
+import { Frame, Source } from '../../store/reducers';
 
 type Props = {
-  actions: Action[],
+  frames: Frame[],
   state: any,
   source: Source,
   settingsUpdated: any,
@@ -16,7 +16,7 @@ type Options = {
 }
 
 const ReduxState: React.FC<Props> = ({
-  actions,
+  frames,
   state,
   source,
   settingsUpdated,
@@ -24,14 +24,14 @@ const ReduxState: React.FC<Props> = ({
   const onChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const name = e.target.value;
     settingsUpdated({
-      source: { name, index: name === 'state' ? null : actions.length - 1}
+      source: { name, index: name === 'state' ? null : frames.length - 1}
     })
   };
   const options: Options = {
     collapsed: 1,
   };
 
-  const json = source.name === 'state' ? state : actions[source.index];
+  const json = source.name === 'state' ? state : frames[source.index];
   const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
   if (darkThemeMq.matches) {
     options.theme = 'railscasts';
@@ -52,7 +52,7 @@ const ReduxState: React.FC<Props> = ({
             <RadioButton
               id="action-source"
               name="source-group"
-              value="actions"
+              value="frames"
               title="Action"
               onChange={onChange}
               valueRef={source.name}

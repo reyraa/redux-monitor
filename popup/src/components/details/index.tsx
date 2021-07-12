@@ -5,7 +5,7 @@ import { Settings } from '../../store/reducers';
 
 const mapStateToProps = (state: any) => ({
   state: state.state,
-  actions: state.actions,
+  frames: state.frames,
   source: state.settings.source,
 });
 const mapDispatchToProps = (dispatch: any) => ({

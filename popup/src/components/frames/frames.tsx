@@ -1,49 +1,49 @@
 import React, { useState, ChangeEvent } from 'react';
-import ActionItem from './actionItem';
+import FrameItem from './frameItem';
 import Button from '../shared/button';
 import Input from '../shared/input';
 import {
-  Action,
+  Frame,
   Source,
   Settings,
 } from '../../store/reducers';
 
 type Props = {
-  actions: Action[],
-  actionsCleared: () => void,
+  frames: Frame[],
+  framesCleared: () => void,
   settingsUpdated: (data: Partial<Settings>) => void,
   source:  Source,
 }
 
-const Actions: React.FC<Props> = ({
-  actions,
-  actionsCleared,
+const Frames: React.FC<Props> = ({
+  frames,
+  framesCleared,
   settingsUpdated,
   source,
 }) => {
   const [query, setQuery] = useState('');
-  const actionSelected = (index: number) => {
+  const frameSelected = (index: number) => {
     settingsUpdated({
-      source: { name: 'actions', index }
+      source: { name: 'frames', index }
     });
   };
 
   const onSearch = (e: ChangeEvent<HTMLInputElement>): void => {
     setQuery(e.target.value);
   };
-  
-  const filteredList = query.length > 2
-    ? actions.filter(item => item.type.includes(query)) : actions;
 
+  const filteredList = query.length > 2
+    ? frames.filter(item => item.data.type.includes(query)) : frames;
+  console.log('filteredList',  filteredList);
   return (
-    <aside className="actions">
+    <aside className="frames">
       <header>
           <div className="">
             <h2>Actions</h2>
             <span className="subtitle">Click for details</span>
           </div>
           <Button
-            onClick={actionsCleared}
+            onClick={framesCleared}
             title="Clear"
             icon="ico-clear"
           />
@@ -56,14 +56,14 @@ const Actions: React.FC<Props> = ({
           value={query}
         />
         <div className="scroll-view">
-          <ul id="action-list">
+          <ul id="frame-list">
             {
               filteredList.map((item, index) => (
-                <ActionItem
-                  key={`${item.type}-${index}`}
-                  action={item}
-                  prevDate={index > 0 ? actions[index - 1].meta.date : undefined}
-                  onSelect={actionSelected}
+                <FrameItem
+                  key={`${item.data.type}-${index}`}
+                  frame={item}
+                  prevDate={(index > 0 && filteredList.length > 0) ? filteredList[index - 1].meta.date : undefined}
+                  onSelect={frameSelected}
                   index={index}
                   isSelected={index === source.index}
                 />
@@ -76,4 +76,4 @@ const Actions: React.FC<Props> = ({
   );
 }
 
-export default Actions;
+export default Frames;

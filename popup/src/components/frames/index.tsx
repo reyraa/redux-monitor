@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
-import Actions from './actions';
-import { actionsCleared, settingsUpdated } from "../../store/actions";
+import Frames from './frames';
+import { framesCleared, settingsUpdated } from "../../store/actions";
 import { Settings } from '../../store/reducers';
 
 const mapStateToProps = (state: any) => ({
-  actions: state.actions,
+  frames: state.frames,
   source: state.settings.source,
 });
 const mapDispatchToProps = (dispatch: any) => ({
-  actionsCleared: () => dispatch(actionsCleared()),
+  framesCleared: () => dispatch(framesCleared()),
   settingsUpdated: (data: Partial<Settings>) => dispatch(settingsUpdated(data)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Actions);
+export default connect(mapStateToProps, mapDispatchToProps)(Frames);

@@ -165,7 +165,7 @@ body {
     padding: 10px;
 }
 
-.actions,
+.frames,
 .state {
     height: 470px;
     overflow: hidden;
@@ -173,7 +173,7 @@ body {
     flex-flow: column nowrap;
 }
 
-.actions {
+.frames {
     width: 200px;
     padding: 15px 7.5px 15px 15px;
 }
@@ -183,7 +183,7 @@ body {
     padding: 15px 15px 15px 7.5px;
 }
 
-.actions > header,
+.frames > header,
 .state > header {
     width: 100%;
     display: flex;
@@ -193,28 +193,28 @@ body {
     padding-bottom: 15px;
 }
 
-.actions > section,
+.frames > section,
 .state > section {
     height: 100%;
     overflow: hidden;
 }
 
 /********************
-ASIDE / ACTIONS
+ASIDE / INSTANTS
 ********************/
 
-.actions section.box {
+.frames section.box {
     padding-right: 0;
     padding-left: 0;
 }
 
-.actions ul {
+.frames ul {
     list-style-type: none;
     padding: 0 15px;
     margin: 0;
 }
 
-.actions li {
+.frames li {
     padding: 0 0 4px 0;
     color: #6B6A6D;
     text-align: left;
@@ -225,11 +225,11 @@ ASIDE / ACTIONS
     cursor: pointer;
 }
 
-.actions li:last-child {
+.frames li:last-child {
     border-bottom: none;
 }
 
-.actions li div {
+.frames li div {
     border-radius: 5px;
     display: inline-block;
     width: 100%;
@@ -238,13 +238,13 @@ ASIDE / ACTIONS
     margin: 0 -5px;
 }
 
-.actions li span {
+.frames li span {
     display: inline-block;
     width: 100%;
     font-weight: 500;
 }
 
-.actions li time {
+.frames li time {
     display: inline-block;
     width: 100%;
     text-align: right;
@@ -254,30 +254,30 @@ ASIDE / ACTIONS
     padding-bottom: 5px;
 }
 
-.actions li:hover .relative {
+.frames li:hover .relative {
     z-index: 1;
 }
 
-.actions li .absolute {
+.frames li .absolute {
     position: absolute;
     z-index: -1;
     opacity: 0;
     left: 0;
 }
 
-.actions li.selected div,
-.actions li:hover div {
+.frames li.selected div,
+.frames li:hover div {
     background: rgba(0, 0, 0, 0.06);
 }
 
-.actions li.selected .relative,
-.actions li:hover .relative {
+.frames li.selected .relative,
+.frames li:hover .relative {
     z-index: -1;
     opacity: 0;
 }
 
-.actions li.selected .absolute,
-.actions li:hover .absolute {
+.frames li.selected .absolute,
+.frames li:hover .absolute {
     z-index: 1;
     opacity: 1;
 }
@@ -401,13 +401,13 @@ Message
         color: #bbb;
     }
 
-    .actions li {
+    .frames li {
         color: #CCC9C9;
         border-bottom: solid 1px rgba(184, 184, 183, 0.5);
     }
 
-    .actions li.selected div,
-    .actions li:hover div {
+    .frames li.selected div,
+    .frames li:hover div {
         background: rgba(255, 255, 255, 0.15);
     }
 }

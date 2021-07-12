@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Actions from '../actions';
+import Frames from '../frames';
 import Details from '../details';
 
 const Panel: React.FC = () => {
@@ -12,7 +12,7 @@ const Panel: React.FC = () => {
 
   return (
     <>
-      <Actions />
+      <Frames />
       <Details />
     </>
   );

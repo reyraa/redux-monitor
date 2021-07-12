@@ -4,28 +4,32 @@ type Meta = {
   date: Date,
 }
 
-export type Action = {
+type Action = {
   type: string,
   data: any,
+}
+
+export type Frame = {
+  data: Action,
   meta: Meta
 }
 
-export type ActionsRetrieved = { type: ActionTypes.actionsRetrieved, data: Action[] };
-export type ActionAdded = { type: ActionTypes.actionAdded, data: Action };
-export type ActionsCleared = { type: ActionTypes.actionsCleared };
+export type FramesRetrieved = { type: ActionTypes.framesRetrieved, data: Frame[] };
+export type FrameAdded = { type: ActionTypes.frameAdded, data: Frame };
+export type FramesCleared = { type: ActionTypes.framesCleared };
 
-type ActionsAction = 
-  | ActionsRetrieved
-  | ActionAdded
-  | ActionsCleared
+type FramesAction = 
+  | FramesRetrieved
+  | FrameAdded
+  | FramesCleared
 
-const actionsReducer = (state: Action[] = [], action: ActionsAction): Action[] => {
+const framesReducer = (state: Frame[] = [], action: FramesAction): Frame[] => {
   switch (action.type) {
-    case ActionTypes.actionsRetrieved:
+    case ActionTypes.framesRetrieved:
       return action.data;
-    case ActionTypes.actionAdded:
+    case ActionTypes.frameAdded:
       return [...state, action.data]
-    case ActionTypes.actionsCleared:
+    case ActionTypes.framesCleared:
       return []
     default:
       return state
@@ -53,7 +57,7 @@ const stateReducer = (state = {}, action: StateAction): State => {
 
 export type Source =
   | { name: 'state', index: null }
-  | { name: 'actions', index: number }
+  | { name: 'frames', index: number }
 
 export type Settings = {
   source: Source,
@@ -86,5 +90,5 @@ const settingsReducer = (state = defaultSettings, action: SettingsAction): Setti
 export default ({
   settings: settingsReducer,
   state: stateReducer,
-  actions: actionsReducer,
+  frames: framesReducer,
 });

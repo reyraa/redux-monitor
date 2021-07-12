@@ -1,7 +1,7 @@
 enum ActionTypes {
-  actionsRetrieved = 'actions/retrieved',
-  actionAdded = 'action/added',
-  actionsCleared = 'actions/cleared',
+  framesRetrieved = 'frames/retrieved',
+  frameAdded = 'frame/added',
+  framesCleared = 'frames/cleared',
   stateUpdated = 'state/updated',
   stateReset = 'state/reset',
   settingsUpdated = 'settings/updated',

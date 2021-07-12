@@ -1,17 +1,17 @@
 import React from 'react';
 import Time from './time';
-import { Action } from '../../store/reducers';
+import { Frame } from '../../store/reducers';
 
 type Props = {
-  action: Action,
+  frame: Frame,
   onSelect: (index: number) => void,
   index: number,
   isSelected: boolean,
   prevDate?: Date,
 }
 
-const ActionItem: React.FC<Props> = ({
-  action,
+const FrameItem: React.FC<Props> = ({
+  frame,
   onSelect,
   index,
   isSelected,
@@ -22,13 +22,13 @@ const ActionItem: React.FC<Props> = ({
     className={isSelected ? 'selected' : ''}
   >
     <div>
-      <span className="type">{action.type}</span>
+      <span className="type">{frame.data.type}</span>
       <Time
-        date={action.meta.date}
+        date={frame.meta.date}
         prevDate={prevDate}
       />
     </div>
   </li>
 );
 
-export default ActionItem;
+export default FrameItem;

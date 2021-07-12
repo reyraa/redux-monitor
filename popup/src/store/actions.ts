@@ -2,28 +2,28 @@ import ActionTypes from "./actionTypes";
 import {
   State,
   Settings,
-  Action,
-  ActionsRetrieved,
-  ActionAdded,
-  ActionsCleared,
+  Frame,
+  FramesRetrieved,
+  FrameAdded,
+  FramesCleared,
   StateUpdated,
   StateReset,
   SettingsUpdated,
   SettingsReset,
 } from './reducers';
 
-export const actionsRetrieved = (data: Action[]): ActionsRetrieved => ({
-  type: ActionTypes.actionsRetrieved,
+export const framesRetrieved = (data: Frame[]): FramesRetrieved => ({
+  type: ActionTypes.framesRetrieved,
   data,
 });
 
-export const actionAdded = (data: Action): ActionAdded => ({
-  type: ActionTypes.actionAdded,
+export const frameAdded = (data: Frame): FrameAdded => ({
+  type: ActionTypes.frameAdded,
   data,
 });
 
-export const actionsCleared = (): ActionsCleared => ({
-  type: ActionTypes.actionsCleared,
+export const framesCleared = (): FramesCleared => ({
+  type: ActionTypes.framesCleared,
 });
 
 export const stateUpdated= (data: State): StateUpdated => ({
