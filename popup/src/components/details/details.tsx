@@ -31,7 +31,7 @@ const ReduxState: React.FC<Props> = ({
     collapsed: 1,
   };
 
-  const json = source.name === 'state' ? state : frames[source.index];
+  const json = source.name === 'state' ? state : frames[source.index].data;
   const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
   if (darkThemeMq.matches) {
     options.theme = 'railscasts';
