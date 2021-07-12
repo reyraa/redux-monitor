@@ -4,7 +4,7 @@ const pad = (num: number) =>
   num.toString().padStart(2, '0');
 
 const getTimeDiff = (dateFuture: number, dateNow: number) => {
-  let diffMil: number = Math.abs(dateFuture - dateNow) / 1000;
+  let diffMil: number = Math.abs(dateFuture - dateNow);
 
   // calculate days
   const days = Math.floor(diffMil / 86400);
