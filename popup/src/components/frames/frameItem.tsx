@@ -7,7 +7,7 @@ type Props = {
   onSelect: (index: number) => void,
   index: number,
   isSelected: boolean,
-  prevDate?: Date,
+  prevDate?: number,
 }
 
 const FrameItem: React.FC<Props> = ({

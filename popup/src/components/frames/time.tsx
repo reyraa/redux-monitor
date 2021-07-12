@@ -3,8 +3,8 @@ import React from 'react';
 const pad = (num: number) =>
   num.toString().padStart(2, '0');
 
-const getTimeDiff = (dateFuture: Date, dateNow: Date) => {
-  let diffMil: number = Math.abs(dateFuture.getTime() - dateNow.getTime()) / 1000;
+const getTimeDiff = (dateFuture: number, dateNow: number) => {
+  let diffMil: number = Math.abs(dateFuture - dateNow) / 1000;
 
   // calculate days
   const days = Math.floor(diffMil / 86400);
@@ -25,24 +25,27 @@ const getTimeDiff = (dateFuture: Date, dateNow: Date) => {
 }
 
 type Props = {
-  date: Date,
-  prevDate?: Date,
+  date: number,
+  prevDate?: number,
 }
 
 const Time: React.FC<Props> = ({
   prevDate,
   date,
-}) => (
-  <time dateTime={date.toLocaleTimeString().replace(/\//g, '-')}>
-    <span className="relative">
-      {
-        !prevDate
-          ? date.toLocaleTimeString()
-          : getTimeDiff(date, prevDate)
-      }
-    </span>
-    <span className="absolute">{date.toLocaleTimeString()}</span>
-  </time>
-);
+}) => {
+  const dateStr = (new Date()).toLocaleTimeString();
+  return (
+    <time dateTime={dateStr.replace(/\//g, '-')}>
+      <span className="relative">
+        {
+          !prevDate
+            ? dateStr
+            : getTimeDiff(date, prevDate)
+        }
+      </span>
+      <span className="absolute">{dateStr}</span>
+    </time>
+  );
+};
 
 export default Time;

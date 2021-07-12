@@ -1,7 +1,7 @@
 import ActionTypes from "./actionTypes";
 
 type Meta = {
-  date: Date,
+  date: number,
 }
 
 type Action = {
