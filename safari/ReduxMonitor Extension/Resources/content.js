@@ -1,21 +1,21 @@
 // Listen for the events comming from the host website.
 const db = {
-    actions: [],
+    frames: [],
     state: null,
 };
 
 // Listen to events comming from the host website / devtools middleware
 document.addEventListener('SafariReduxDevToolsExtension', function (e) {
 
-    if (e.detail.action && e.detail.state) {
-        db.actions.push(e.detail.action);
+    if (e.detail.frame && e.detail.state) {
+        db.frames.push(e.detail.frame);
         db.state = e.detail.state;
     }
 
 
-    // Send an instant action from content js
+    // Send a single frame from content js
     browser.runtime.sendMessage({
-        type: 'instant',
+        type: 'frame',
         direction: 'CNT->POP',
         data: e.detail
     });
