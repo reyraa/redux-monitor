@@ -25,22 +25,22 @@ const getTimeDiff = (dateFuture: number, dateNow: number) => {
 }
 
 type Props = {
-  date: number,
-  prevDate?: number,
+  timestamp: number,
+  prevFrame?: number,
 }
 
 const Time: React.FC<Props> = ({
-  prevDate,
-  date,
+  prevFrame,
+  timestamp,
 }) => {
   const dateStr = (new Date()).toLocaleTimeString();
   return (
     <time dateTime={dateStr.replace(/\//g, '-')}>
       <span className="relative">
         {
-          !prevDate
+          !prevFrame
             ? dateStr
-            : getTimeDiff(date, prevDate)
+            : getTimeDiff(timestamp, prevFrame)
         }
       </span>
       <span className="absolute">{dateStr}</span>

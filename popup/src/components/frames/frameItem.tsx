@@ -7,7 +7,7 @@ type Props = {
   onSelect: (index: number) => void,
   index: number,
   isSelected: boolean,
-  prevDate?: number,
+  prevFrame?: number,
 }
 
 const FrameItem: React.FC<Props> = ({
@@ -15,7 +15,7 @@ const FrameItem: React.FC<Props> = ({
   onSelect,
   index,
   isSelected,
-  prevDate,
+  prevFrame,
 }) => (
   <li
     onClick={() => onSelect(index)}
@@ -24,8 +24,8 @@ const FrameItem: React.FC<Props> = ({
     <div>
       <span className="type">{frame.data.type}</span>
       <Time
-        date={frame.meta.date}
-        prevDate={prevDate}
+        timestamp={frame.meta.timestamp}
+        prevFrame={prevFrame}
       />
     </div>
   </li>

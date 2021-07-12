@@ -62,7 +62,7 @@ const Frames: React.FC<Props> = ({
                 <FrameItem
                   key={`${item.data.type}-${index}`}
                   frame={item}
-                  prevDate={(index > 0 && filteredList.length > 0) ? filteredList[index - 1].meta.date : undefined}
+                  prevFrame={(index > 0 && filteredList.length > 0) ? filteredList[index - 1].meta.timestamp : undefined}
                   onSelect={frameSelected}
                   index={index}
                   isSelected={index === source.index}
