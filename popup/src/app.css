@@ -242,6 +242,8 @@ ASIDE / INSTANTS
     display: inline-block;
     width: 100%;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .frames li time {
