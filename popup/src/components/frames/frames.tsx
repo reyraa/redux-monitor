@@ -33,8 +33,8 @@ const Frames: React.FC<Props> = ({
   };
 
   const filteredList = query.length > 2
-    ? frames.filter(item => item.data.type.includes(query)) : frames;
-  console.log('filteredList',  filteredList);
+    ? frames.filter(item => item.data.type.toLowerCase().includes(query)) : frames;
+
   return (
     <aside className="frames">
       <header>
