@@ -1,6 +1,6 @@
 {
   "name": "popup",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "description": "The react application used to render the popup of the Safari Extension (@reduxMonitor/safariExtension)",
   "main": "./src/app.js",
