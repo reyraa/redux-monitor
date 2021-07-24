@@ -25,15 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ico-record:before {
+  content: "\e903";
+}
 .ico-state:before {
   content: "\e900";
 }
 .ico-action:before {
   content: "\e902";
 }
-.ico-clear:before {
-  content: "\e901";
+.ico-pause-record:before {
+  content: "\e904";
+}
+.ico-log-on-host:before {
+  content: "\e905";
 }
 .ico-search:before {
   content: "\e911";
+}
+.ico-clear:before {
+  content: "\e901";
 }
