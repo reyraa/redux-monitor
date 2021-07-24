@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Frames from '../frames';
 import Details from '../details';
+import Footer from '../footer';
 
 const Panel: React.FC = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Panel: React.FC = () => {
     <>
       <Frames />
       <Details />
+      <Footer />
     </>
   );
 };
