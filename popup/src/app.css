@@ -7,13 +7,19 @@ BASIC
 ********************/
 .button {
     cursor: pointer;
-    height: 40px;
+    height: 26px;
+    width: 26px;
+}
+
+.button.box {
     display: flex;
-    justify-content: space-between;
+    height: 40px;
+    width: auto;
     min-width: 90px;
-    box-sizing: border-box;
     padding-top: 6px !important;
     padding-bottom: 6px !important;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .button .button-icon {
@@ -50,11 +56,11 @@ BASIC
     line-height: 27px;
 }
 
-.button:hover {
+.button.box:hover {
     background: rgba(0, 0, 0, 0.06);
 }
 
-.button:active {
+.button.box:active {
     border: solid 0.5px rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 1px 0.5px rgba(0, 0, 0, 0.2);
 }
@@ -91,17 +97,20 @@ h2 {
     text-align: left;
 }
 
-input[type="radio"] {
+input[type="radio"],
+input[type="checkbox"] {
     visibility: hidden;
     position: absolute;
     z-index: -1;
 }
 
-input[type="radio"]:checked + .button .button-icon {
+input[type="radio"]:checked + .button .button-icon,
+input[type="checkbox"]:checked + .button .button-icon {
     background: #3686F7;
 }
 
-input[type="radio"]:checked + .button .button-icon:before {
+input[type="radio"]:checked + .button .button-icon:before,
+input[type="checkbox"]:checked + .button .button-icon:before {
     color: #fff !important;
 }
 
@@ -146,7 +155,7 @@ body {
 
 .wrapper {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
@@ -156,7 +165,7 @@ body {
 
 .wrapper.panel {
     width: 700px;
-    height: 500px;
+    height: 541px;
 }
 
 .wrapper.message {
@@ -179,8 +188,16 @@ body {
 }
 
 .state {
-    width: 450px;
+    width: 455px;
     padding: 15px 15px 15px 7.5px;
+}
+
+.footer {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 15px 15px;
 }
 
 .frames > header,
@@ -360,7 +377,8 @@ Message
         background: rgba(255, 255, 255, 0.2);
     }
 
-    input[type="radio"]:checked + .button .button-icon:before  {
+    input[type="radio"]:checked + .button .button-icon:before,
+    input[type="checkbox"]:checked + .button .button-icon:before {
         color: #fff !important;
     }
 
@@ -376,11 +394,11 @@ Message
         color: white;
     }
 
-    .button:hover {
+    .button.box:hover {
         background: rgba(255, 255, 255, 0.15);
     }
 
-    .button:active {
+    .button.box:active {
         border: solid 0.5px rgba(255, 255, 255, 0.5);
         box-shadow: 0 0 1px 0.5px rgba(0, 0, 0, 0.2);
     }
