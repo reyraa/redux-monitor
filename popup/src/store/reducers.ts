@@ -23,7 +23,19 @@ type FramesAction =
   | FrameAdded
   | FramesCleared
 
-const framesReducer = (state: Frame[] = [], action: FramesAction): Frame[] => {
+  const timestamp = 1626122386578;
+  const initialFrames: Frame[] = [
+    {
+      data: { type: 'error_type_name_long_enough', data: { key: 'some_thing' } },
+      meta: { timestamp }
+    },
+    {
+      data: { type: 'sample_type', data: { key: 'some_thing' } },
+      meta: { timestamp: timestamp + 1000}
+    },
+  ];
+
+const framesReducer = (state: Frame[] = initialFrames, action: FramesAction): Frame[] => {
   switch (action.type) {
     case ActionTypes.framesRetrieved:
       return action.data;
@@ -62,6 +74,8 @@ export type Source =
 export type Settings = {
   source: Source,
   extensionStatus: string,
+  record: boolean,
+  logOnHost: boolean,
 }
 
 export type SettingsUpdated = { type: ActionTypes.settingsUpdated, data: Partial<Settings> }
@@ -74,6 +88,8 @@ type SettingsAction =
 const defaultSettings: Settings = {
   source: { name: 'state', index: null },
   extensionStatus: 'notInitiated',
+  record: true,
+  logOnHost: false,
 };
 
 const settingsReducer = (state = defaultSettings, action: SettingsAction): Settings => {
